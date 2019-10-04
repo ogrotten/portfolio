@@ -692,7 +692,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 50px 0 0 50px;
+						/* padding: 50px 0 0 50px; */
 					}
 
 					.row.gtr-uniform {
@@ -1918,7 +1918,7 @@ input, select, textarea {
 	}
 
 		#header > .container {
-			padding: 14em 0 7em 0;
+			padding: 6em 0 4em 0;
 			border-bottom: solid 2px #e5e5e5;
 			box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
 		}
@@ -2097,7 +2097,7 @@ input, select, textarea {
 	}
 
 		#features p {
-			text-align: center;
+			/* text-align: center; */
 		}
 
 		#features ul.actions {
@@ -2169,7 +2169,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		background: #fff;
-		padding: 6em 0;
+		padding: 0 0 6em 0;
 	}
 
 /* Content */
@@ -2178,8 +2178,8 @@ input, select, textarea {
 	#content > article {
 		border-top: solid 2px #e5e5e5;
 		box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
-		margin: 5em 0 0 0;
-		padding: 5em 0 0 0;
+		margin: 2em 0 0 0;
+		/* padding: 5em 0 0 0; */
 	}
 
 		#content > section:first-child,
@@ -2286,7 +2286,7 @@ input, select, textarea {
 		/* Header */
 
 			#header > .container {
-				padding: 12em 0 5em 0;
+				padding: 4em 0 3em 0;
 			}
 
 			#header h1 {
@@ -2322,7 +2322,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 4em 0;
+				padding: 0 0 4em 0;
 			}
 
 		/* Footer */
@@ -2357,7 +2357,7 @@ input, select, textarea {
 		/* Header */
 
 			#header > .container {
-				padding: 10em 0 7em 0;
+				padding: 3em 0 2em 0;
 			}
 
 		/* Nav */
@@ -2377,7 +2377,7 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				padding-bottom: 1px;
+				/* padding-bottom: 1px; */
 			}
 
 			#titleBar {
@@ -2389,7 +2389,8 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				display: block;
+				/* display: block; */
+				display: none;
 				height: 44px;
 				left: 0;
 				position: fixed;
@@ -2457,7 +2458,8 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				display: block;
+				/* display: block; */
+				display: none;
 				height: 100%;
 				left: 0;
 				overflow-y: auto;
@@ -2620,7 +2622,7 @@ input, select, textarea {
 		/* Header */
 
 			#header > .container {
-				padding: 6em 0 4em 0;
+				padding: 3em 0 1em 0;
 			}
 
 			#header h1 {
@@ -2672,7 +2674,7 @@ input, select, textarea {
 
 			#content > section,
 			#content > article {
-				margin: 3em 0 0 0;
+				margin: em 0 0 0;
 				padding: 3em 0 0 0;
 			}
 
@@ -2713,3 +2715,9 @@ input, select, textarea {
 
 	}
 
+article.box.highlight {
+	width: 80%;
+	padding: 0 0 50px;
+	border-bottom: solid 2px #e5e5e5;
+
+}
