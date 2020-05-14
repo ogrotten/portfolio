@@ -34,7 +34,7 @@ html {
 /* =10px */
 body {
   font-family: 'SansFont';
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   /* =14px */
   color: #333;
 }
@@ -61,6 +61,11 @@ h3 {
 p {
   line-height: 3rem;
   margin: 0 0 2rem 0;
+}
+p.subtitle {
+  font-family: "SansFontI";
+  font-size: 1.3rem;
+  margin-top: -10px;
 }
 .sidebar {
   border-top: 6px solid #c9eaea;
