@@ -59,6 +59,10 @@ section {
 	&.projects, &.projects-rev  {
 		display: flex;
 		justify-content: space-between;
+		p {
+			font-size: 1.5rem;
+			line-height: 2.3rem;
+		}
 	}
 	
 	&.projects-rev {
@@ -91,8 +95,9 @@ section {
 		padding: 20px calc(@col-margin * 1.5) 0;
 		width: calc(@col * 3%);
 		border-radius: 4px;
-		min-height: 100%
+		min-height: 100%;
 		.sidebar();
+		
 	}
 
 	.profile {

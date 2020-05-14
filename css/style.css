@@ -65,7 +65,7 @@ p {
 }
 p.subtitle {
   font-family: "SansFontI";
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   margin-top: -10px;
 }
 .sidebar {
@@ -129,6 +129,11 @@ section.projects-rev {
   display: flex;
   justify-content: space-between;
 }
+section.projects p,
+section.projects-rev p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
 section.projects-rev {
   background-color: #f7f7f7;
   flex-direction: row-reverse;
@@ -154,7 +159,10 @@ section .blurb {
   padding: 20px calc(20px * 1.5) 0;
   width: calc(100 * 3%);
   border-radius: 4px;
-  min-height: 100% border-top: 6px solid #c9eaea; border-bottom: 2px solid #c9eaea; background-color: #e3f4f4;;
+  min-height: 100%;
+  border-top: 6px solid #c9eaea;
+  border-bottom: 2px solid #c9eaea;
+  background-color: #e3f4f4;
 }
 section .profile a {
   display: block;
