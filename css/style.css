@@ -177,3 +177,7 @@ section .blurb img {
 section .blurb a {
   display: block;
 }
+footer {
+  min-height: 250px;
+  width: 100%;
+}
