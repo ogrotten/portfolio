@@ -1,0 +1,169 @@
+@import "reset.css";
+@font-face {
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gentium Basic'), local('GentiumBasic'), url(https://fonts.gstatic.com/s/gentiumbasic/v11/Wnz9HAw9aB_JD2VGQVR80We3LA2JjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v7/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K-DQBi8Jow.ttf) format('truetype');
+}
+@font-face {
+  font-family: "SansFont";
+  src: url("../fonts/HelveticaNeueLTStd-Roman.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontI";
+  src: url("../fonts/HelveticaNeueLTStd-It.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontB";
+  src: url("../fonts/HelveticaNeueLTStd-Blk.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontBI";
+  src: url("../fonts/HelveticaNeueLTStd-BlkIt.otf") format("truetype");
+}
+html {
+  font-size: 62.5%;
+}
+/* =10px */
+body {
+  font-family: 'SansFont';
+  font-size: 1.6rem;
+  /* =14px */
+  color: #333;
+}
+h1,
+h2 {
+  font-family: 'SansFontB';
+  margin: 0px 0px 1.2rem 0px;
+}
+h3,
+h4 {
+  font-family: 'SansFontBI';
+  color: #444;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+  font-style: oblique;
+}
+p {
+  line-height: 3rem;
+  margin: 0 0 2rem 0;
+}
+p.subtitle {
+  font-family: "SansFontI";
+  font-size: 1.3rem;
+  margin-top: -10px;
+}
+.sidebar {
+  border-top: 6px solid #c9eaea;
+  border-bottom: 2px solid #c9eaea;
+  background-color: #e3f4f4;
+}
+.headfoot {
+  border-top: 6px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+}
+.spacer {
+  width: calc(100 * 1%);
+}
+div.container {
+  width: 900px;
+  margin: 0 auto;
+}
+div.container > * {
+  padding: 10px;
+}
+div.container h1 {
+  border-top: 1px solid #eeeeee;
+}
+header {
+  border-radius: 0 0 6px 6px;
+  border-top: 6px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  align-items: center;
+}
+header nav a {
+  margin: 5px;
+}
+header nav .navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+header nav .navlinks a {
+  margin: 0;
+}
+header nav .right {
+  text-align: right;
+}
+header nav .logo h1 {
+  font-size: 3.6rem;
+  margin: 0;
+  border: 0;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+section.projects,
+section.projects-rev {
+  display: flex;
+  justify-content: space-between;
+}
+section.projects-rev {
+  background-color: #f7f7f7;
+  flex-direction: row-reverse;
+  border-radius: 4px;
+}
+section article {
+  width: calc(100 * 5%);
+  margin: 20px;
+  padding: 10px;
+}
+section .profile,
+section .blurb {
+  margin: 20px;
+  padding: 10px;
+  width: calc(100 * 3%);
+  border-radius: 4px;
+  min-height: 100% border-top: 6px solid #c9eaea; border-bottom: 2px solid #c9eaea; background-color: #e3f4f4;;
+}
+section article.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section article.logos .logo {
+  height: 50px;
+  width: 50px;
+}
+section .blurb {
+  padding: 20px calc(20px * 1.5) 0;
+}
+section .blurb img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+section .blurb a {
+  display: block;
+}
