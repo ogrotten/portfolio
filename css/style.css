@@ -94,6 +94,7 @@ header {
   border-radius: 0 0 6px 6px;
   border-top: 6px solid #dcdcdc;
   border-bottom: 2px solid #dcdcdc;
+  margin-bottom: 30px;
 }
 header nav {
   display: flex;
