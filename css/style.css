@@ -39,6 +39,9 @@ body {
   /* =14px */
   color: #333;
 }
+body .invert a {
+  color: #ccc;
+}
 h1,
 h2 {
   font-family: 'SansFontB';
@@ -108,7 +111,7 @@ header nav a {
 header nav .navlinks {
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  width: 15%;
 }
 header nav .navlinks a {
   margin: 0;
@@ -125,17 +128,17 @@ section {
   display: flex;
   justify-content: space-between;
 }
-section.projects,
-section.projects-rev {
+section.item,
+section.item-rev {
   display: flex;
   justify-content: space-between;
 }
-section.projects p,
-section.projects-rev p {
+section.item p,
+section.item-rev p {
   font-size: 1.5rem;
   line-height: 2.3rem;
 }
-section.projects-rev {
+section.item-rev {
   background-color: #f7f7f7;
   flex-direction: row-reverse;
   border-radius: 4px;
@@ -165,18 +168,16 @@ section .blurb {
   border-bottom: 2px solid #c9eaea;
   background-color: #e3f4f4;
 }
+section .profile {
+  display: block;
+  background-image: url("../img/HEADshot.jpg");
+  height: auto;
+  background-size: 120% auto;
+  background-position: center 80%;
+  transition: all 0.5s ease-in-out;
+}
 section .profile a {
   display: block;
-}
-section .profile img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin: 20px auto;
-  object-fit: cover;
-  object-position: 0 50%;
-  transition: all 0.5s ease-in-out;
-  border-radius: 4px;
 }
 section .blurb img {
   max-width: 100%;
@@ -185,6 +186,9 @@ section .blurb img {
 }
 section .blurb a {
   display: block;
+}
+section.skills {
+  margin: -40px 0 10px;
 }
 footer {
   min-height: 250px;
