@@ -38,6 +38,9 @@ body {
   /* =14px */
   color: #333;
 }
+body .invert a {
+  color: #ccc;
+}
 h1,
 h2 {
   font-family: 'SansFontB';
@@ -64,7 +67,7 @@ p {
 }
 p.subtitle {
   font-family: "SansFontI";
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   margin-top: -10px;
 }
 .sidebar {
