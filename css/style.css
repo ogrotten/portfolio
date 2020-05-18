@@ -216,14 +216,38 @@ footer {
   }
   section {
     width: 500px;
+    box-sizing: border-box;
   }
   section article {
-    width: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  section article * {
+    margin: 10px;
   }
   section.intro {
-    background-color: salmon;
+    background-color: #e3f4f4;
     display: flex;
     flex-direction: column-reverse;
+  }
+  section.item,
+  section.item-rev {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 10px;
+  }
+  section.item p,
+  section.item-rev p {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  section .profile,
+  section .blurb {
+    border-radius: 4px;
+    min-height: 100%;
+    padding: 10px;
   }
   section .profile p {
     display: flex;
@@ -233,5 +257,21 @@ footer {
   }
   section .profile p a {
     min-width: 50%;
+  }
+  section .blurb {
+    background-color: inherit;
+    border: 0;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  section .blurb img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  section .blurb a {
+    display: block;
   }
 }
