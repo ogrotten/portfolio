@@ -51,6 +51,7 @@ h3,
 h4 {
   font-family: 'SansFontBI';
   color: #444;
+  margin: 15px 0 4px;
 }
 h1 {
   font-size: 3rem;
@@ -112,13 +113,11 @@ header nav .navlinks {
   box-sizing: border-box;
 }
 header nav .navlinks a {
-  background-color: #e3f4f4;
   color: #666;
   text-decoration: none;
   box-sizing: border-box;
   max-width: 100%;
   padding: 7px;
-  margin-left: 10px;
 }
 header nav .right {
   text-align: right;
@@ -131,6 +130,7 @@ header nav .logo h1 {
 section {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 section.item,
 section.item-rev {
@@ -157,10 +157,22 @@ section article.logos {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  max-width: 100%;
 }
 section article.logos .logo {
   height: 50px;
   width: 50px;
+}
+section article.skillist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+section article.skillist span {
+  width: 40%;
 }
 section .profile,
 section .blurb {
@@ -202,6 +214,8 @@ section .blurb a {
 }
 section.skills {
   margin: -40px 0 10px;
+  flex-direction: column;
+  width: 100%;
 }
 footer {
   min-height: 250px;
@@ -225,9 +239,6 @@ footer {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
-  }
-  section article * {
-    margin: 10px;
   }
   section.intro {
     background-color: #e3f4f4;
