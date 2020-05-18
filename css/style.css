@@ -212,20 +212,26 @@ footer {
 }
 @media (max-width: 700px) {
   .container {
-    max-width: 600px;
+    max-width: 500px;
   }
   section {
-    max-width: 600px;
+    width: 500px;
+  }
+  section article {
+    width: inherit;
   }
   section.intro {
     background-color: salmon;
     display: flex;
     flex-direction: column-reverse;
-    width: 100%;
   }
-  section.intro .profile {
-    background-color: salmon;
+  section .profile p {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    height: auto;
+  }
+  section .profile p a {
+    min-width: 50%;
   }
 }
