@@ -29,14 +29,21 @@ header {
 		justify-content: space-between;
 		margin: 10px 0;
 		align-items: center;
-		a {margin: 5px;}
+		// a {margin: 5px;}
 		.navlinks {
 			.blorder();
 			display: flex;
 			justify-content: space-between;
-			width: 15%;
+			box-sizing: border-box;
 			a {
-				margin: 0;
+				background-color: @sidebar-bg-color;
+				color: #666;
+				// border-radius: 20px;
+				text-decoration: none;
+				box-sizing: border-box;
+				max-width: 100%;
+				padding: 7px;
+				margin-left: 10px;
 			}
 		}
 		.right {

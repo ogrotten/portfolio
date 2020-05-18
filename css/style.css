@@ -106,16 +106,19 @@ header nav {
   margin: 10px 0;
   align-items: center;
 }
-header nav a {
-  margin: 5px;
-}
 header nav .navlinks {
   display: flex;
   justify-content: space-between;
-  width: 15%;
+  box-sizing: border-box;
 }
 header nav .navlinks a {
-  margin: 0;
+  background-color: #e3f4f4;
+  color: #666;
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 7px;
+  margin-left: 10px;
 }
 header nav .right {
   text-align: right;
