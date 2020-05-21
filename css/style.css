@@ -38,6 +38,8 @@ body {
   font-size: 1.6rem;
   /* =14px */
   color: #333;
+  background-color: rgba(252, 243, 206, 0.384);
+  margin: 0;
 }
 body .invert a {
   color: #ccc;
@@ -72,6 +74,13 @@ p.subtitle {
   font-size: 1.25rem;
   margin-top: -10px;
 }
+a {
+  text-decoration: none;
+  color: #444;
+}
+a:hover {
+  font-weight: bold;
+}
 .sidebar {
   border-top: 6px solid #c9eaea;
   border-bottom: 2px solid #c9eaea;
@@ -84,9 +93,21 @@ p.subtitle {
 .spacer {
   width: calc(100 * 1%);
 }
+i.fas,
+i.fab {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #444;
+}
 div.container {
   width: 900px;
   margin: 0 auto;
+  padding: 10px 20px;
+  background-color: white;
+  border-left: 4px solid #eeeeee;
+  border-right: 4px solid #eeeeee;
+  box-sizing: border-box;
 }
 div.container > * {
   padding: 10px;
@@ -97,6 +118,7 @@ div.container h1 {
 }
 header {
   border-radius: 0 0 6px 6px;
+  padding: 0;
   border-top: 6px solid #dcdcdc;
   border-bottom: 2px solid #dcdcdc;
   margin-bottom: 30px;
@@ -104,7 +126,7 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 10px;
   align-items: center;
 }
 header nav .navlinks {
@@ -113,11 +135,13 @@ header nav .navlinks {
   box-sizing: border-box;
 }
 header nav .navlinks a {
-  color: #666;
   text-decoration: none;
   box-sizing: border-box;
   max-width: 100%;
   padding: 7px;
+}
+header nav .navlinks a:hover {
+  font-weight: bold;
 }
 header nav .right {
   text-align: right;
@@ -126,6 +150,11 @@ header nav .logo h1 {
   font-size: 3.6rem;
   margin: 0;
   border: 0;
+}
+header nav .logo p {
+  font-size: 1.4rem;
+  line-height: 1rem;
+  margin: 3px 0;
 }
 section {
   display: flex;
@@ -147,6 +176,9 @@ section.item-rev {
   background-color: #f7f7f7;
   flex-direction: row-reverse;
   border-radius: 4px;
+}
+section.intro article {
+  margin: 0 20px;
 }
 section article {
   width: calc(100 * 5%);
@@ -182,8 +214,17 @@ section .blurb {
   border-bottom: 2px solid #c9eaea;
   background-color: #e3f4f4;
 }
-section .profile a {
-  display: block;
+section .profile {
+  margin: 20px;
+}
+section .profile .fab {
+  margin: 0 25px 0 0;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #444;
+}
+section .profile .links {
+  text-align: center;
 }
 section .profile img {
   display: block;
@@ -196,7 +237,7 @@ section .profile img {
   border-radius: 0;
 }
 section .profile p {
-  margin: 30px;
+  margin: 20px;
   height: auto;
 }
 section .blurb {
@@ -218,7 +259,7 @@ section.skills {
   width: 100%;
 }
 footer {
-  min-height: 250px;
+  min-height: 75px;
   width: 100%;
 }
 @media (max-width: 900px) {

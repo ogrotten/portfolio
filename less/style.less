@@ -3,9 +3,22 @@
 @import "./tricks.less";
 
 
+i.fas, i.fab {
+	margin-right: 10px;
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: #444;
+}
+
 div.container {
+	.blorder();
 	width: 900px;
 	margin: 0 auto;
+	padding: 10px 20px;
+	background-color: white;
+	border-left: 4px solid @neutral-bg-color;
+	border-right: 4px solid @neutral-bg-color;
+	box-sizing: border-box;
 	> * {
 		padding: 10px;
 	}
@@ -16,43 +29,46 @@ div.container {
 }
 
 header {
-	// .blorder();
-	// border: 24px, solid, #6b2e2e;
-	
-	// background-color: @neutral-bg-color;
-	// background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
-
+	.blorder();
 	border-radius: 0 0 6px 6px;
+	padding: 0;
 	nav {
 		.blorder();
 		display: flex;
 		justify-content: space-between;
-		margin: 10px 0;
+		margin: 10px;
 		align-items: center;
-		// a {margin: 5px;}
+
 		.navlinks {
 			.blorder();
 			display: flex;
 			justify-content: space-between;
 			box-sizing: border-box;
 			a {
-				// background-color: @sidebar-bg-color;
-				color: #666;
-				// border-radius: 20px;
+				// font-weight: bold;
 				text-decoration: none;
 				box-sizing: border-box;
 				max-width: 100%;
 				padding: 7px;
-				// margin-left: 10px;
+				&:hover{
+					font-weight: bold;
+				}
 			}
 		}
 		.right {
 			text-align: right;
 		}
-		.logo h1 {
-			font-size: 3.6rem;
-			margin: 0;
-			border: 0;
+		.logo{
+			h1 {
+				font-size: 3.6rem;
+				margin: 0;
+				border: 0;
+			}
+			p {
+				font-size: 1.4rem;
+				line-height: 1rem;
+				margin: 3px 0;			
+			}
 		}
 	}
 	.headfoot();
@@ -81,7 +97,13 @@ section {
 		flex-direction: row-reverse;
 		border-radius: 4px;
 	}
+	
+	&.intro {
+		article {
+			margin: 0 20px;
+		}
 
+	}
 	article {
 		.blorder();
 		width: calc(@col * 5%);
@@ -120,8 +142,15 @@ section {
 	}
 
 	.profile {
-		a {
-			display: block;
+		margin:20px;
+		.fab {
+			margin: 0 25px 0 0;
+			text-decoration: none;
+			font-size: 3rem;
+			color: #444;
+		}
+		.links {
+			text-align: center;
 		}
 		img {
 			display: block;
@@ -135,7 +164,7 @@ section {
 			border-radius: 0;
 		}
 		p {
-			margin: 30px;
+			margin: 20px;
 			height: auto;
 		}
 		// display: block;
@@ -181,7 +210,7 @@ section {
 }
 
 footer {
-	min-height:250px;
+	min-height:75px;
 	width: 100%
 }
 
