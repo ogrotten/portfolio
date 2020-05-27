@@ -44,9 +44,12 @@ body {
 body .invert a {
   color: #ccc;
 }
-h1,
-h2 {
+h1 {
   font-family: 'SansFontB';
+  margin: 0px 0px 1.2rem 0px;
+}
+h2 {
+  font-family: 'SansFont';
   margin: 0px 0px 1.2rem 0px;
 }
 h3,
@@ -59,10 +62,10 @@ h1 {
   font-size: 3rem;
 }
 h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: oblique;
 }
 p {
@@ -114,7 +117,10 @@ div.container > * {
 }
 div.container h1 {
   border-top: 1px solid #eeeeee;
-  margin: 30px 0;
+  margin: 30px 0 0;
+}
+div.container div.anchor {
+  display: none;
 }
 header {
   border-radius: 0 0 6px 6px;
@@ -179,6 +185,19 @@ section.item-rev {
 }
 section.intro article {
   margin: 0 20px;
+}
+section.skills {
+  margin: 0px 0 10px;
+  flex-direction: column;
+  width: 100%;
+}
+section.history {
+  flex-direction: row;
+}
+section.history p,
+section.history li {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
 }
 section article {
   width: calc(100 * 5%);
@@ -253,11 +272,6 @@ section .blurb img {
 section .blurb a {
   display: block;
 }
-section.skills {
-  margin: -40px 0 10px;
-  flex-direction: column;
-  width: 100%;
-}
 footer {
   min-height: 75px;
   width: 100%;
@@ -309,6 +323,11 @@ footer {
     width: 100%;
     padding: 20px;
     margin: 0px;
+  }
+  section.history {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
   }
   section.item,
   section.item-rev {

@@ -24,8 +24,9 @@ div.container {
 	}
 	h1 {
 		border-top: 1px solid @neutral-bg-color;
-		margin: 30px 0;
+		margin: 30px 0 0;
 	}
+	div.anchor {display: none;}
 }
 
 header {
@@ -104,6 +105,22 @@ section {
 		}
 
 	}
+	
+	&.skills {
+		margin: -0px 0 10px;
+		flex-direction: column;
+		
+		width: 100%;
+	}	
+
+	&.history {
+		flex-direction: row;
+		p, li {
+			font-size: 1.5rem;
+			line-height: 2.3rem;
+		}
+	}
+
 	article {
 		.blorder();
 		width: calc(@col * 5%);
@@ -198,13 +215,7 @@ section {
 		// }
 
 	}
-	
-	&.skills {
-		margin: -40px 0 10px;
-		flex-direction: column;
-		
-		width: 100%;
-	}
+
 
 
 }
@@ -259,6 +270,11 @@ footer {
 				padding: 20px;
 				margin: 0px;
 			}
+		}
+		&.history {
+			flex-direction: column;
+			box-sizing: border-box;
+			width: 100%;
 		}
 		&.item, &.item-rev  {
 			display: flex;
