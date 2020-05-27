@@ -230,16 +230,29 @@ footer {
 		width: 500px;
 		box-sizing: border-box;
 		article {
-			width: 100%;
-			box-sizing: border-box;
 			padding:0;
+			box-sizing: border-box;
+			width: 100%;
 			// * {margin:4px;}
 		}
 		&.intro {
 			background-color: @sidebar-bg-color;
 			display: flex;
 			flex-direction: column-reverse;
-			// width: 100%;
+			box-sizing: border-box;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			.profile {
+				margin: 0;
+				padding: 00px;
+			}
+			article {
+				box-sizing: border-box;
+				width: 100%;
+				padding: 20px;
+				margin: 0px;
+			}
 		}
 		&.item, &.item-rev  {
 			display: flex;
@@ -247,6 +260,8 @@ footer {
 			flex-direction: column;
 			margin: 30px 0;
 			padding: 10px;
+			box-sizing: border-box;
+			width: 100%;
 			p {
 				font-size: 1.5rem;
 				line-height: 2.3rem;
@@ -256,16 +271,20 @@ footer {
 			border-radius: 4px;
 			min-height: 100%;	
 			padding:10px;
+			box-sizing: border-box;
 		}	
 		.profile{
+			padding: 0;
+			box-sizing: border-box;
+
 			p {
 				display: flex;
 				flex-wrap: wrap;
-				margin: 30px;
+				margin: 20px;
 				height: auto;
-				a {
-					min-width: 50%;
-				}
+				// a {
+				// 	min-width: 25%;
+				// }
 			}
 		}
 		.blurb {

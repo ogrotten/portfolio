@@ -37,6 +37,8 @@ body {
   font-size: 1.6rem;
   /* =14px */
   color: #333;
+  background-color: rgba(252, 243, 206, 0.384);
+  margin: 0;
 }
 body .invert a {
   color: #ccc;
@@ -50,6 +52,7 @@ h3,
 h4 {
   font-family: 'SansFontBI';
   color: #444;
+  margin: 15px 0 4px;
 }
 h1 {
   font-size: 3rem;
@@ -69,6 +72,13 @@ p.subtitle {
   font-family: "SansFontI";
   font-size: 1.25rem;
   margin-top: -10px;
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+a:hover {
+  font-weight: bold;
 }
 .sidebar {
   border-top: 6px solid #c9eaea;
