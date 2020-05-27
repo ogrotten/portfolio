@@ -235,6 +235,7 @@ section .blurb {
 }
 section .profile {
   margin: 20px;
+  width: calc(100 * 4%);
 }
 section .profile .fab {
   margin: 0 25px 0 0;
@@ -315,6 +316,7 @@ footer {
     padding: 0;
   }
   section.intro .profile {
+    width: 100%;
     margin: 0;
     padding: 00px;
   }
