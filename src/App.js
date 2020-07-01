@@ -9,18 +9,17 @@ import {
 } from 'recoil';
 
 import Main from './components/base/Main.js';
-import SideNav from './components/base/SideNav.js';
-import Feed from './components/feed.js';
+import Head from './components/base/Head.js';
+import Foot from './components/base/Foot.js';
 
 
 function App() {
 	return (
 		<div class="container">
 			<RecoilRoot>
-				<SideNav>
-					<Feed />
-				</SideNav>
+				<Head />
 				<Main />
+				<Foot />
 			</RecoilRoot>
 		</div>
 	);

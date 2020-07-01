@@ -13,12 +13,15 @@ i.fas, i.fab {
 
 div.container {
 	@include blorder();
-	display: flex;
+	// display: flex;
 	width: $basewidth;
 	margin: 0 auto;
-	padding: 0;
+	padding: 10px;
+	border-left: 4px solid $neutral-bg-color;
+	border-right: 4px solid $neutral-bg-color;
 	background-color: white;
 	box-sizing: border-box;
+	
 	> * {
 		padding: 10px;
 	}
