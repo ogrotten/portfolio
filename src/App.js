@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route, withRouter } from "react-router-dom";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import './sass/style.scss';
 import {
 	RecoilRoot,
@@ -17,9 +16,10 @@ import Home from './components/Home.js';
 function App() {
 	return (
 		<RecoilRoot>
-			<Route exact path="/" component={Home} />
-
-			<Main />
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route component={Main} />
+			</Switch>
 		</RecoilRoot>
 	);
 }
