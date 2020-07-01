@@ -1,7 +1,9 @@
 @import "./reset.css";
 @import "./foundation.scss";
 @import "./tricks.scss";
+
 @import "./base.scss";
+@import "./home.scss";
 
 
 i.fas, i.fab {
@@ -12,6 +14,7 @@ i.fas, i.fab {
 }
 
 div.container {
+	z-index: 100;
 	@include blorder();
 	// display: flex;
 	width: $basewidth;

@@ -15,12 +15,17 @@ import Foot from './components/base/Foot.js';
 
 function App() {
 	return (
-		<div className="container">
-			<RecoilRoot>
-				<Head />
-				<Main />
-				<Foot />
-			</RecoilRoot>
+		<div className="over">
+			<div className="mainbg"></div>
+			<div className="cover"></div>
+
+			<div className="container">
+				<RecoilRoot>
+					<Head />
+					{/* <Main /> */}
+					<Foot />
+				</RecoilRoot>
+			</div>
 		</div>
 	);
 }
