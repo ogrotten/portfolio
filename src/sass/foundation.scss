@@ -28,6 +28,8 @@ $neutral-bg-color: rgb(238,238,238);
 $neutral-border-color: darken($neutral-bg-color, 7%);
 $project-offset-color: lighten($neutral-bg-color, 3.5%);
 
+$page-bg: rgba(252, 243, 206, 0.384);
+
 $col: 100; 
 $col-margin: 20px;
 $col-padding: 10px;
@@ -38,7 +40,7 @@ body {
 	font-family: 'SansFont';
 	font-size: 1.6rem; /* =14px */
 	color: #333;
-	background-color: rgba(252, 243, 206, 0.384);
+	background-color: $page-bg;
 	margin: 0;
 	.invert a{
 		color: #ccc;
@@ -103,7 +105,10 @@ a {
 	width: calc($col * 1%);
 }
 
+// BASE width
+$basewidth: 1100px;
 
+// Column widths
 $col1: 100px;
 $col2: 200px;
 $col3: 300px;
@@ -113,3 +118,5 @@ $col6: 600px;
 $col7: 700px;
 $col8: 800px;
 $col9: 900px;
+$col10: 1000px;
+$col11: 1100px;

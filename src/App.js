@@ -8,21 +8,21 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-import HeadComp from './components/base/head.js';
-import FootComp from './components/base/foot.js';
-import NavComp from './components/base/nav.js';
+import Main from './components/base/Main.js';
+import SideNav from './components/base/SideNav.js';
 import Feed from './components/feed.js';
 
 
 function App() {
 	return (
-		<RecoilRoot>
-			<HeadComp />
-			<NavComp>
-				<Feed />
-			</NavComp>
-			<FootComp />
-		</RecoilRoot>
+		<div class="container">
+			<RecoilRoot>
+				<SideNav>
+					<Feed />
+				</SideNav>
+				<Main />
+			</RecoilRoot>
+		</div>
 	);
 }
 

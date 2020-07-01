@@ -1,0 +1,11 @@
+div.sidenav {
+	width: $col3;
+	border-left: 4px solid darken($page-bg, 30%);
+
+	background-color: $page-bg;
+}
+div.main {
+	width: $col8;
+	border-left: 4px solid $neutral-bg-color;
+	border-right: 4px solid $neutral-bg-color;
+}

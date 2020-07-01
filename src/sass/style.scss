@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./foundation.scss";
 @import "./tricks.scss";
+@import "./base.scss";
 
 
 i.fas, i.fab {
@@ -12,12 +13,11 @@ i.fas, i.fab {
 
 div.container {
 	@include blorder();
-	width: 900px;
+	display: flex;
+	width: $basewidth;
 	margin: 0 auto;
-	padding: 10px 20px;
+	padding: 0;
 	background-color: white;
-	border-left: 4px solid $neutral-bg-color;
-	border-right: 4px solid $neutral-bg-color;
 	box-sizing: border-box;
 	> * {
 		padding: 10px;
