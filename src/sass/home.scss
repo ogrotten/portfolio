@@ -17,6 +17,10 @@ body {
 	// }
 }
 
+
+// $floaty-bg: rgba(134, 120, 61, .5);
+$floaty-bg: rgba(255, 255, 0, .5);
+
 div.over {
 	position: relative;
 	height: 100vh;
@@ -162,23 +166,25 @@ div.over {
 		z-index: 0;
 		position: absolute;
 		margin-top: -25px;
-		height: 900px;
+		// height: 900px;
+		height: 120%;
 		width: 6000px;
-		// background-image: url("../imgs/floatbg.jpg");
 		background-image: url("../imgs/floatbg.jpg");
 		// background-position: center center;
-		// background-size: 50%;
+		background-size: auto 100%;
 		animation: move 250s infinite linear;
 		will-change: transform;
-		opacity: 0.08;
+		opacity: 0.2;
 	}
 	
 	div.mainbg {
-		z-index: 0;
+		z-index: 1;
 		position: absolute;
 		height: 100%;
 		width: 100%;
-		background-image: linear-gradient(rgba(0, 0, 96, 1), rgba(32, 32, 96, .8));
+		
+		// background-image: linear-gradient(desaturate($floaty-bg, 50%), lighten($floaty-bg, 30%));
+		background-image: linear-gradient(desaturate(darken($floaty-bg, 30%), 0%), lighten($floaty-bg, 50%));
 	}
 /* 	.bar {
 		display: flex;
