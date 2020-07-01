@@ -19,7 +19,9 @@ export default function Main() {
 	return (
 		<div className="container">
 			<Head />
+			
 			<Route exact path="/projects" component={Projects} />
+			<Route exact path="/hilights" component={Hilights} />
 
 			<Foot />
 		</div>
