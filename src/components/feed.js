@@ -7,5 +7,5 @@ import {
 } from 'recoil';
 
 export default function Feed() {
-	return " "
+	return ("Feeed")
 }

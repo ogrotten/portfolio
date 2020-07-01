@@ -7,5 +7,5 @@ import {
 } from 'recoil';
 
 export default function Projects() {
-	return " "
+	return ("Projects")
 }

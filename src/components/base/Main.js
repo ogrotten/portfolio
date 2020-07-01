@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route, withRouter } from "react-router-dom";
+
 import {
 	atom,
 	selector,
@@ -6,15 +8,20 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-import Home from '../Home.js';
+import Head from './Head.js';
+import Foot from './Foot.js';
+
 import Hilights from '../Hilights.js';
 import Projects from '../Projects.js';
 import Feed from '../Feed.js';
 
 export default function Main() {
 	return (
-		<div className="main">
-			<Home />
+		<div className="container">
+			<Head />
+			<Route exact path="/projects" component={Projects} />
+
+			<Foot />
 		</div>
 	)
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route, withRouter } from "react-router-dom";
+
 import './sass/style.scss';
 import {
 	RecoilRoot,
@@ -9,24 +11,16 @@ import {
 } from 'recoil';
 
 import Main from './components/base/Main.js';
-import Head from './components/base/Head.js';
-import Foot from './components/base/Foot.js';
+import Home from './components/Home.js';
 
 
 function App() {
 	return (
-		<div className="over">
-			<div className="mainbg"></div>
-			<div className="cover"></div>
+		<RecoilRoot>
+			<Route exact path="/" component={Home} />
 
-			<div className="container">
-				<RecoilRoot>
-					<Head />
-					{/* <Main /> */}
-					<Foot />
-				</RecoilRoot>
-			</div>
-		</div>
+			<Main />
+		</RecoilRoot>
 	);
 }
 
