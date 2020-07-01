@@ -15,7 +15,7 @@ import Foot from './components/base/Foot.js';
 
 function App() {
 	return (
-		<div class="container">
+		<div className="container">
 			<RecoilRoot>
 				<Head />
 				<Main />

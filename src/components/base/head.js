@@ -6,7 +6,7 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-export default function HeadComp() {
+export default function Head() {
 	return (
 		<header>
 			<nav>

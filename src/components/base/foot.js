@@ -6,6 +6,6 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-export default function FootComp() {
+export default function Foot() {
 	return " "
 }
