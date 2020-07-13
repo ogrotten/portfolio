@@ -5,8 +5,8 @@
 @import "./base.scss";
 @import "./home.scss";
 
-
-i.fas, i.fab {
+i.fas,
+i.fab {
 	margin-right: 10px;
 	text-decoration: none;
 	font-size: 1.6rem;
@@ -24,7 +24,7 @@ div.container {
 	border-right: 4px solid $neutral-bg-color;
 	background-color: white;
 	box-sizing: border-box;
-	
+
 	> * {
 		padding: 10px;
 	}
@@ -32,7 +32,9 @@ div.container {
 		border-top: 1px solid $neutral-bg-color;
 		margin: 30px 0 0;
 	}
-	div.anchor {display: none;}
+	div.anchor {
+		display: none;
+	}
 }
 
 header {
@@ -57,7 +59,7 @@ header {
 				box-sizing: border-box;
 				max-width: 100%;
 				padding: 7px;
-				&:hover{
+				&:hover {
 					font-weight: bold;
 				}
 			}
@@ -65,7 +67,7 @@ header {
 		.right {
 			text-align: right;
 		}
-		.logo{
+		.logo {
 			h1 {
 				font-size: 3.6rem;
 				margin: 0;
@@ -74,22 +76,23 @@ header {
 			p {
 				font-size: 1.4rem;
 				line-height: 1rem;
-				margin: 3px 0;			
+				margin: 3px 0;
 			}
 		}
 	}
 	@include headfoot();
-	margin-bottom:30px;
+	margin-bottom: 30px;
 }
-
 
 section {
 	@include blorder();
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;
-	
-	&.item, &.item-rev  {
+	z-index: 10;
+
+	&.item,
+	&.item-rev {
 		display: flex;
 		justify-content: space-between;
 		margin: 30px 0;
@@ -98,31 +101,38 @@ section {
 			line-height: 2.3rem;
 		}
 	}
-	
+
 	&.item-rev {
 		background-color: $project-offset-color;
 		flex-direction: row-reverse;
 		border-radius: 4px;
 	}
-	
+
 	&.intro {
 		article {
 			margin: 0 20px;
 			width: $col6;
 		}
-
 	}
-	
+
 	&.skills {
 		margin: -0px 0 10px;
-		flex-direction: column;
-		
+		// flex-direction: column;
+
 		width: 100%;
-	}	
+		box-sizing: border-box;
+
+		article {
+			margin: 0 20px;
+			// width: $col6;
+			width: inherit;
+		}
+	}
 
 	&.history {
 		flex-direction: row;
-		p, li {
+		p,
+		li {
 			font-size: 1.5rem;
 			line-height: 2.3rem;
 		}
@@ -146,7 +156,7 @@ section {
 			width: 50px;
 		}
 	}
-	
+
 	article.skillist {
 		display: flex;
 		flex-direction: row;
@@ -159,14 +169,15 @@ section {
 		}
 	}
 
-	.profile, .blurb {
+	.profile,
+	.blurb {
 		border-radius: 4px;
 		min-height: 100%;
 		@include sidebar();
 	}
 
 	.profile {
-		margin:20px;
+		margin: 20px;
 		width: $col4;
 		.fab {
 			margin: 0 25px 0 0;
@@ -200,7 +211,7 @@ section {
 		// background-position: center 80%;
 		// transition: all 0.5s ease-in-out;
 	}
-	
+
 	.blurb {
 		margin: $col-margin;
 		// padding: $col-padding;
@@ -210,7 +221,7 @@ section {
 		img {
 			max-width: 100%;
 			height: auto;
-			padding-bottom: 20px
+			padding-bottom: 20px;
 		}
 		a {
 			display: block;
@@ -221,19 +232,15 @@ section {
 		// .live::before {
 		// 		content: $fa-var-github
 		// }
-
 	}
-
-
-
 }
 
 footer {
-	min-height:75px;
-	width: 100%
+	min-height: 75px;
+	width: 100%;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
 	div.container {
 		margin: 0 auto;
 		width: 100%;
@@ -241,12 +248,16 @@ footer {
 	}
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
 	nav {
 		flex-direction: column;
 		margin: 0;
-		.logo {text-align: center;}
-		.navlinks {margin: 10px 0 0 0;}
+		.logo {
+			text-align: center;
+		}
+		.navlinks {
+			margin: 10px 0 0 0;
+		}
 	}
 	.container {
 		max-width: 500px;
@@ -255,7 +266,7 @@ footer {
 		width: 500px;
 		box-sizing: border-box;
 		article {
-			padding:0;
+			padding: 0;
 			box-sizing: border-box;
 			width: 100%;
 			// * {margin:4px;}
@@ -285,7 +296,8 @@ footer {
 			box-sizing: border-box;
 			width: 100%;
 		}
-		&.item, &.item-rev  {
+		&.item,
+		&.item-rev {
 			display: flex;
 			// justify-content: space-between;
 			flex-direction: column;
@@ -298,13 +310,14 @@ footer {
 				line-height: 2.3rem;
 			}
 		}
-		.profile, .blurb {
+		.profile,
+		.blurb {
 			border-radius: 4px;
-			min-height: 100%;	
-			padding:10px;
+			min-height: 100%;
+			padding: 10px;
 			box-sizing: border-box;
-		}	
-		.profile{
+		}
+		.profile {
 			padding: 0;
 			box-sizing: border-box;
 
@@ -329,14 +342,11 @@ footer {
 			img {
 				max-width: 100%;
 				height: auto;
-				padding-bottom: 20px
+				padding-bottom: 20px;
 			}
 			a {
 				display: block;
 			}
 		}
-	
-		
 	}
-	
 }

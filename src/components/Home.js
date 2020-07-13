@@ -35,7 +35,7 @@ export default function Home() {
 			<hr />
 			<section className="skills">
 				<article className="logos">
-					<span className="logo art obtained from https://github.com/konpa/devicon" />
+					{/* <span className="logo art obtained from https://github.com/konpa/devicon" /> */}
 					<svg width="54px" height="54px" className="logo" viewBox="0 0 128 128">
 						<title>CSS3</title>
 						<path fill="#1572B6"
