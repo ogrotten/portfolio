@@ -90,6 +90,29 @@ section {
 	justify-content: space-between;
 	box-sizing: border-box;
 	z-index: 10;
+	width: $basewidth;
+
+	&.intro {
+		article {
+			margin: 0 20px;
+			width: $col6;
+		}
+	}
+
+	&.skills {
+		@include blorder();
+		// margin: -0px 0 10px;
+		// flex-direction: column;
+
+		// width: 100%;
+		box-sizing: border-box;
+
+		article {
+			margin: 0 20px;
+			// width: $col6;
+			width: inherit;
+		}
+	}
 
 	&.item,
 	&.item-rev {
@@ -106,27 +129,6 @@ section {
 		background-color: $project-offset-color;
 		flex-direction: row-reverse;
 		border-radius: 4px;
-	}
-
-	&.intro {
-		article {
-			margin: 0 20px;
-			width: $col6;
-		}
-	}
-
-	&.skills {
-		margin: -0px 0 10px;
-		// flex-direction: column;
-
-		width: 100%;
-		box-sizing: border-box;
-
-		article {
-			margin: 0 20px;
-			// width: $col6;
-			width: inherit;
-		}
 	}
 
 	&.history {
@@ -157,17 +159,17 @@ section {
 		}
 	}
 
-	article.skillist {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0;
-		box-sizing: border-box;
-		width: 100%;
-		span {
-			width: 40%;
-		}
-	}
+	// article.skillist {
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	justify-content: space-evenly;
+	// 	margin: 0;
+	// 	box-sizing: border-box;
+	// 	width: 100%;
+	// 	span {
+	// 		width: 40%;
+	// 	}
+	// }
 
 	.profile,
 	.blurb {
@@ -177,8 +179,10 @@ section {
 	}
 
 	.profile {
-		margin: 20px;
+		@include blorder();
+		margin: 0 20px;
 		width: $col4;
+		
 		.fab {
 			margin: 0 25px 0 0;
 			text-decoration: none;
