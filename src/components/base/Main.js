@@ -16,5 +16,5 @@ export default function Main() {
 		<div className="main">
 			<Home />
 		</div>
-	)
+	) 
 }
