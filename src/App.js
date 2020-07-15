@@ -1,28 +1,27 @@
 import React from 'react';
+import { Route, withRouter } from "react-router-dom";
+
 import './sass/style.scss';
-import {
-	RecoilRoot,
-	atom,
-	selector,
-	useRecoilState,
-	useRecoilValue,
-} from 'recoil';
 
 import Main from './components/base/Main.js';
 import Head from './components/base/Head.js';
 import Foot from './components/base/Foot.js';
 
-
-function App() {
+function App(props) {
+	let page = "beat"
 	return (
 		<div className="container">
-			<RecoilRoot>
-				<Head />
-				<Main />
-				<Foot />
-			</RecoilRoot>
+			{/* <Head props={page}/> */}
+			<Route path="/" component={Head} />
+			<Main />
+			<Foot />
 		</div>
 	);
 }
 
 export default App;
+
+{/* <Switch>
+	<Route exact path="/" component={Home} />
+	<Route component={Main} />
+</Switch> */}

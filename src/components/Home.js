@@ -20,19 +20,19 @@ export default function Home() {
                 </p>
 				</article>
 				<div className="profile">
-					<img src="./img/HEADshot.jpg" alt="" srcset="" />
-					<p className="links">
+					<img src="./img/HEADshot.jpg" alt="" srcSet="" />
+					<div className="links">
 						<p><a>dlowery@monsto.com</a></p>
 						<p>
-							<a alt="LinkedIn" href="https://www.linkedin.com/in/https://www.linkedin.com/in/darrinlowerykc//" target="blank" alt="LinkedIn"><i class="fab fa-linkedin"></i></a>
-							<a alt="Github" href="https://github.com/ogrotten" target="blank" alt="github"><i class="fab fa-github"></i></a>
-							<a alt="Dev.to" href="https://dev.to/ogrotten" target="blank" alt="dev.to"><i class="fab fa-dev"></i></a>
+							<a alt="LinkedIn" href="https://www.linkedin.com/in/https://www.linkedin.com/in/darrinlowerykc//" target="blank" alt="LinkedIn"><i className="fab fa-linkedin"></i></a>
+							<a alt="Github" href="https://github.com/ogrotten" target="blank" alt="github"><i className="fab fa-github"></i></a>
+							<a alt="Dev.to" href="https://dev.to/ogrotten" target="blank" alt="dev.to"><i className="fab fa-dev"></i></a>
 						</p>
-					</p>
+					</div>
 				</div>
 			</section>
 			<hr />
-			<section class="skills">
+			<section className="skills">
 				<Logos />
 			</section>
 		</>

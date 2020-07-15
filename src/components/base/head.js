@@ -6,7 +6,8 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-export default function Head() {
+export default function Head(props) {
+	console.log(10, props.location.pathname);
 	return (
 		<header>
 			<nav>
