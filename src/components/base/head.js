@@ -7,7 +7,6 @@ import {
 } from 'recoil';
 
 export default function Head(props) {
-	console.log(10, props.location.pathname);
 
 	const withHeader = (
 		<header>

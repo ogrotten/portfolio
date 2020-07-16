@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, withRouter } from "react-router-dom";
+import { Route, withRouter, useHistory } from "react-router-dom";
 
 import './sass/style.scss';
 
@@ -8,10 +8,13 @@ import Head from './components/base/Head.js';
 import Foot from './components/base/Foot.js';
 
 function App(props) {
-	
-	let page = "beat"
+	let history = useHistory();
+	let className =
+		history.location.pathname === "/"
+			? "scrolly"
+			: "main"
 	return (
-		<div className="main">
+		<div className={className}>
 			<Route path="/" component={Head} />
 			<Main />
 			<Foot />
@@ -20,8 +23,3 @@ function App(props) {
 }
 
 export default App;
-
-{/* <Switch>
-	<Route exact path="/" component={Home} />
-	<Route component={Main} />
-</Switch> */}

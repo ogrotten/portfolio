@@ -23,6 +23,22 @@ div.main {
 	align-items: center;
 }
 
+div.scrolly {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.landing {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 header {
 	@include blorder();
 	border-radius: 0 0 6px 6px;
