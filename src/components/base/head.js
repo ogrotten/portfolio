@@ -6,8 +6,9 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-export default function Head() {
-	return (
+export default function Head(props) {
+
+	const withHeader = (
 		<header>
 			<nav>
 				<div className="logo">
@@ -15,11 +16,23 @@ export default function Head() {
 					<p>Web Developer ● Design Analyst</p>
 				</div>
 				<div className="navlinks">
-                    <a className="button" alt="Skills" href="#skills">Skills</a>
+					<a className="button" alt="Skills" href="#skills">Skills</a>
 					<a className="button" alt="Projects" href="#projects">Projects</a>
 					<a className="button" alt="History" href="#history">Highlights</a>
 				</div>
 			</nav>
 		</header>
+	)
+
+	const noHeader = (<></>)
+
+	return (
+		<>
+			{
+				props.location.pathname === "/"
+					? noHeader
+					: withHeader
+			}
+		</>
 	)
 }

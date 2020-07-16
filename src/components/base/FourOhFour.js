@@ -6,7 +6,6 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-export default function Feed() {
-	return "feed"
+export default function FourOhFour() {
+	return "404 - stop that."
 }
-

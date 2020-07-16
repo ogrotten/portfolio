@@ -13,23 +13,35 @@ i.fas, i.fab {
 
 div.container {
 	@include blorder();
-	// display: flex;
-	width: $basewidth;
-	margin: 0 auto;
-	padding: 10px;
-	border-left: 4px solid $neutral-bg-color;
-	border-right: 4px solid $neutral-bg-color;
-	background-color: white;
-	box-sizing: border-box;
-	
-	> * {
-		padding: 10px;
-	}
-	h1 {
-		border-top: 1px solid $neutral-bg-color;
-		margin: 30px 0 0;
-	}
-	div.anchor {display: none;}
+}
+
+div.main {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.scrolly {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-image: none;
+	overflow: hidden;
+}
+
+div.landing {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 header {
@@ -230,24 +242,31 @@ footer {
 	width: 100%
 }
 
+
 @media(max-width: 900px) {
-	div.container {
-		margin: 0 auto;
-		width: 100%;
-		// max-width: 900px;
+	div.main {
+		display: block;
+	}
+	body {
+		font-size: 1.45rem;
+	}
+	p {
+		line-height: 2.6rem;
 	}
 }
 
 @media(max-width: 700px) {
+	div.main {
+		display: block;
+	}
+
 	nav {
 		flex-direction: column;
 		margin: 0;
 		.logo {text-align: center;}
 		.navlinks {margin: 10px 0 0 0;}
 	}
-	.container {
-		max-width: 500px;
-	}
+
 	section {
 		width: 500px;
 		box-sizing: border-box;
@@ -305,14 +324,16 @@ footer {
 			padding: 0;
 			box-sizing: border-box;
 
+			img {
+				max-width: 370px;
+				margin: 20px auto;
+			}
+
 			p {
 				display: flex;
 				flex-wrap: wrap;
 				margin: 20px;
 				height: auto;
-				// a {
-				// 	min-width: 25%;
-				// }
 			}
 		}
 		.blurb {
@@ -335,5 +356,15 @@ footer {
 	
 		
 	}
-	
+
+	article.logos { margin: 15px 0};
+
+	body {
+		font-size: 1.3rem;
+	}
+
+	p {
+		line-height: 2.4rem;
+	}
+
 }
