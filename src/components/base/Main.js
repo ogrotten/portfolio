@@ -14,11 +14,11 @@ import Feed from '../Feed.js';
 
 export default function Main() {
 	return (
-		<div className="main">
+		<>
 			<Route exact path="/" component={Home} />
 			<Route exact path="/feed" component={Feed} />
 			<Route exact path="/projects" component={Projects} />
 			<Route exact path="/hilights" component={Hilights} />
-		</div>
+		</>
 	) 
 }

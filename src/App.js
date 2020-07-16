@@ -8,10 +8,10 @@ import Head from './components/base/Head.js';
 import Foot from './components/base/Foot.js';
 
 function App(props) {
+	
 	let page = "beat"
 	return (
-		<div className="container">
-			{/* <Head props={page}/> */}
+		<div className="main">
 			<Route path="/" component={Head} />
 			<Main />
 			<Foot />

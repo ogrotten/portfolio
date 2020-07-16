@@ -9,7 +9,7 @@ import {
 export default function Head(props) {
 	console.log(10, props.location.pathname);
 
-	const nay = (
+	const withHeader = (
 		<header>
 			<nav>
 				<div className="logo">
@@ -25,14 +25,14 @@ export default function Head(props) {
 		</header>
 	)
 
-	const boo = (<></>)
+	const noHeader = (<></>)
 
 	return (
 		<>
 			{
 				props.location.pathname === "/"
-					? boo
-					: nay
+					? noHeader
+					: withHeader
 			}
 		</>
 	)

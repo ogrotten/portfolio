@@ -4,8 +4,47 @@ div.sidenav {
 
 	background-color: $page-bg;
 }
-// div.main {
-// 	width: $col8;
-// 	border-left: 4px solid $neutral-bg-color;
-// 	border-right: 4px solid $neutral-bg-color;
-// }
+
+div.Home {
+	@include blorder();
+	// display: flex;
+	width: $basewidth;
+	margin: 0 auto;
+	padding: 10px;
+	// border-left: 4px solid $neutral-bg-color;
+	// border-right: 4px solid $neutral-bg-color;
+	box-shadow: 0 0 10px $neutral-border-color;
+	border: 2px solid $neutral-border-color;
+	background-color: white;
+	box-sizing: border-box;
+	
+	> * {
+		padding: 10px;
+	}
+	hr {padding: 0;}
+	h1 {
+		border-top: 1px solid $neutral-bg-color;
+		margin: 30px 0 0;
+	}
+	div.anchor {display: none;}
+}
+
+@media(max-width: 900px) {
+	div.Home {
+		margin: 0 auto;
+		width: 94%;
+		// max-width: 900px;
+	}
+}
+
+@media(max-width: 700px) {
+	nav {
+		flex-direction: column;
+		margin: 0;
+		.logo {text-align: center;}
+		.navlinks {margin: 10px 0 0 0;}
+	}
+	.container {
+		max-width: 500px;
+	}
+}

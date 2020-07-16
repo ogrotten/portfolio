@@ -10,7 +10,7 @@ import Logos from './Logos.js'
 
 export default function Home() {
 	return (
-		<>
+		<div className="Home">
 			<section className="intro">
 				<article>
 					<p>I am a graduate of the Full Stack Web track of Lambda School. Completed the 4 Units of primary and Computer Science instruction with high marks, completed Lambda Labs project with high marks.</p>
@@ -35,6 +35,6 @@ export default function Home() {
 			<section className="skills">
 				<Logos />
 			</section>
-		</>
+		</div>
 	)
 }
