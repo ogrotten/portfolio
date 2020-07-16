@@ -6,27 +6,71 @@ div.sidenav {
 }
 
 div.Home {
+	z-index: 10;
 	@include blorder();
 	width: $basewidth;
 	margin: 0 auto;
 	padding: 10px;
-	box-shadow: 0 0 30px rgba(255, 255, 255, 1);
-	background-color:  rgba(255, 255, 255, .5);
-	border-radius: 40px;
+	// box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+	// background-color: rgba(255, 255, 255, 0.5);
+	// border-radius: 40px;
 	box-sizing: border-box;
-	
+
 	> * {
 		padding: 10px;
 	}
-	hr {padding: 0;}
+	hr {
+		padding: 0;
+	}
 	h1 {
 		border-top: 1px solid $neutral-bg-color;
 		margin: 30px 0 0;
 	}
-	div.anchor {display: none;}
+	div.anchor {
+		display: none;
+	}
+}
+$floaty-bg: rgba(255, 255, 0, .5);
+#root {overflow: hidden;}
+div.cover {
+	z-index: 0;
+	position: absolute;
+	margin-top: -25px;
+	// height: 900px;
+	height: 120%;
+	width: 6000px;
+	background-image: url("../imgs/floatbg.jpg");
+	// background-position: center center;
+	background-size: auto 100%;
+	animation: move 250s infinite linear;
+	will-change: transform;
+	opacity: 0.10;
+	overflow: hidden;
 }
 
-@media(max-width: 900px) {
+div.mainbg {
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	// background-image: linear-gradient(desaturate($floaty-bg, 50%), lighten($floaty-bg, 30%));
+	background-image: linear-gradient(desaturate(darken($floaty-bg, 30%), 0%), lighten($floaty-bg, 50%));
+}
+
+@keyframes move {
+	0% {
+		transform: translateY(0px) translateX(1500px);
+	}
+	50% {
+		transform: translateY(0px) translateX(-1500px);
+	}
+	100% {
+		transform: translateY(0) translateX(1500px);
+	}
+}
+
+@media (max-width: 900px) {
 	div.Home {
 		margin: 0 auto;
 		width: 94%;
@@ -34,12 +78,16 @@ div.Home {
 	}
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
 	nav {
 		flex-direction: column;
 		margin: 0;
-		.logo {text-align: center;}
-		.navlinks {margin: 10px 0 0 0;}
+		.logo {
+			text-align: center;
+		}
+		.navlinks {
+			margin: 10px 0 0 0;
+		}
 	}
 	.container {
 		max-width: 500px;

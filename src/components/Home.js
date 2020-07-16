@@ -31,7 +31,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<hr />
+			{/* <hr /> */}
 			<section className="skills">
 				<Logos />
 			</section>

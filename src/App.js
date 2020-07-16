@@ -9,16 +9,28 @@ import Foot from './components/base/Foot.js';
 
 function App(props) {
 	let history = useHistory();
-	let className =
-		history.location.pathname === "/"
-			? "scrolly"
-			: "main"
+	let className, inject
+	if (history.location.pathname === "/") {
+		className = "scrolly"
+		inject = (
+			<>
+				{/* <div className="mainbg"></div> */}
+				<div className="cover"></div>
+			</>
+		)
+	} else {
+		className = "main"
+		inject = (<></>)
+	}
 	return (
-		<div className={className}>
-			<Route path="/" component={Head} />
-			<Main />
-			<Foot />
-		</div>
+		<>
+			<div className={className}>
+			{inject}
+				<Route path="/" component={Head} />
+				<Main />
+				<Foot />
+			</div>
+		</>
 	);
 }
 
