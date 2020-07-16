@@ -24,11 +24,11 @@ function App(props) {
 	}
 	return (
 		<>
-			{inject}
 			<div className={className}>
+			{inject}
 				<Route path="/" component={Head} />
-				{/* <Main />
-				<Foot /> */}
+				<Main />
+				<Foot />
 			</div>
 		</>
 	);
