@@ -22,7 +22,7 @@ function App(props) {
 		className = "main"
 		inject = (<></>)
 	}
-	return (
+	return ( 
 		<>
 			<div className={className}>
 			{inject}
