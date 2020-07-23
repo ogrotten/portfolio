@@ -90,14 +90,14 @@ p {
 	}
 }
 
-a {
-	text-decoration: none;
-	color: #444;
-	&:hover {
-		// text-decoration: underline;
-		font-weight: bold;
-	}
-}
+// a {
+// 	text-decoration: none;
+// 	color: #444;
+// 	&:hover {
+// 		// text-decoration: underline;
+// 		font-weight: bold;
+// 	}
+// }
 
 @mixin sidebar {
 	border-top: 6px solid $sidebar-border-color;
