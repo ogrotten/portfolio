@@ -8,7 +8,7 @@ import {
 
 export default function Head(props) {
 
-	const withHeader = (
+	const Header = (
 		<header>
 			<nav>
 				<div className="logo">
@@ -24,14 +24,24 @@ export default function Head(props) {
 		</header>
 	)
 
-	const noHeader = (<></>)
+	const homeHeader = (
+		<nav className="homehead">
+			<div className="homenav">
+				<div className="left logo">
+					<h1>Darrin Lowery</h1>
+					<p>Web Developer ● Design Analyst</p>
+				</div>
+				<div className="right">RIGHT</div>
+			</div>
+		</nav>
+	)
 
 	return (
 		<>
 			{
 				props.location.pathname === "/"
-					? noHeader
-					: withHeader
+					? homeHeader
+					: Header
 			}
 		</>
 	)

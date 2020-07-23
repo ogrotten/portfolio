@@ -31,7 +31,7 @@ div.Home {
 	position: fixed;
 	top: 0;
 
-	height: 50px;
+	height: 85px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -43,7 +43,19 @@ div.Home {
 		width: $basewidth;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
+		.logo {
+			h1 {
+				font-size: 3.6rem;
+				margin: 0;
+				border: 0;
+			}
+			p {
+				font-size: 1.4rem;
+				line-height: 1rem;
+				margin: 3px 0;
+			}
+		}
 	}
 }
 
