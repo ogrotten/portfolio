@@ -37,7 +37,9 @@ div.Home {
 	justify-content: center;
 	align-items: center;
 	
-	background-color: #aaa;
+	background-color: rgb(28, 42, 70);
+	color: $sidebar-bg-color;
+	letter-spacing: 1px;
 
 	.homenav {
 		width: $basewidth;
@@ -116,7 +118,9 @@ div.mainbg {
 			margin: 10px 0 0 0;
 		}
 	}
-	.container {
+	.container, .Home {
 		max-width: 500px;
+		height: 100%;
+		width: 100%;
 	}
 }

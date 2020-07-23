@@ -36,6 +36,13 @@ div.scrolly {
 
 	background-image: none;
 	overflow: hidden;
+	@media (max-width: 700px) {
+		overflow-y: scroll;
+		margin-top: 85px;
+		// .homehead {visibility: hidden;}
+		.scrolly {
+		}
+	}
 }
 
 div.landing {
@@ -246,6 +253,12 @@ footer {
 	width: 100%;
 }
 
+@media (min-width: 900px) and (max-width: 1000px) {
+	div.Home, div.homehead {
+		width: 900px;
+		margin: 0 auto;
+	}
+}
 @media (max-width: 900px) {
 	div.main {
 		display: block;
