@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, withRouter, useHistory } from "react-router-dom";
+import { Route, useLocation, useHistory } from "react-router-dom";
 import {
 	atom,
 	selector,
@@ -16,26 +16,16 @@ import Foot from './components/base/Foot.js';
 import Home from './components/Home.js';
 // import Skills from './components/Skills.js';
 import Projects from './components/Projects.js';
-import Experience from './components/Experience.js';
+import Hilights from './components/Hilights.js';
 import Feed from './components/Feed.js';
 
 function App(props) {
-	const history = useHistory();
-	const [current, setCurrent] = useState(history.location.pathname);
-	const [className, setClassName] = useState("scrolly")
-	const [inject, setInject] = useState(
-		<>
-			{/* <div className="mainbg"></div> */}
-			<div className="cover"></div>
-		</>
-	)
-
-	if (current !== history.location.pathname) {
-		setCurrent(history.location.pathname)
-	}
+	const location = useLocation();
+	const [className, setClassName] = useState("")
+	const [inject, setInject] = useState()
 
 	useEffect(() => {
-		if (current === "/") {
+		if (location.pathname === "/") {
 			setClassName("scrolly")
 			setInject(
 				<>
@@ -47,7 +37,7 @@ function App(props) {
 			setClassName("main")
 			setInject(<></>)
 		}
-	}, [current])
+	}, [location])
 
 	return (
 		<>
@@ -58,7 +48,7 @@ function App(props) {
 				<Route exact path="/" component={Home} />
 				<Route exact path="/feed" component={Feed} />
 				<Route exact path="/projects" component={Projects} />
-				<Route exact path="/experience" component={Experience} />
+				<Route exact path="/hilights" component={Hilights} />
 				{/* <Route exact path="/skills" component={Skills} /> */}
 
 				<Foot />

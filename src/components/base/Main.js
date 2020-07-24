@@ -8,7 +8,7 @@ import {
 } from 'recoil';
 
 import Home from '../Home.js';
-import Hilights from '../Experience.js';
+import Hilights from '../Hilights.js';
 import Projects from '../Projects.js';
 import Feed from '../Feed.js';
 
