@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, withRouter, useHistory } from "react-router-dom";
 import {
 	atom,
 	selector,
@@ -7,5 +8,7 @@ import {
 } from 'recoil';
 
 export default function Projects() {
-	return " "
+	let history = useHistory();
+	console.log(10, history.location.pathname);
+	return "projs"
 }

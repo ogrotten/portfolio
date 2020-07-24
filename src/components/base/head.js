@@ -33,10 +33,10 @@ const Head = withRouter(props => {
 					<p>Web Developer ● Design Analyst</p>
 				</div>
 				<div className="homelinks">
-					<Link to="skills" alt="Skills & Qualities"><h2>Skills</h2></Link>
-					<Link to="projects"><h2>Projects</h2></Link>
-					<Link to="hilights"><h2>Highlights</h2></Link>
-					<Link to="feed"><h2>Feed</h2></Link>
+					<Link to="/skills" alt="Skills & Qualities"><h2>Skills</h2></Link>
+					<Link to="/projects"><h2>Projects</h2></Link>
+					<Link to="/hilights"><h2>Highlights</h2></Link>
+					<Link to="/feed"><h2>Feed</h2></Link>
 				</div>
 			</div>
 		</nav>
