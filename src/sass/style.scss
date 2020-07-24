@@ -3,8 +3,10 @@
 @import "./tricks.scss";
 @import "./base.scss";
 
+@import "./pages/Home.scss";
 
-i.fas, i.fab {
+i.fas,
+i.fab {
 	margin-right: 10px;
 	text-decoration: none;
 	font-size: 1.6rem;
@@ -34,6 +36,13 @@ div.scrolly {
 
 	background-image: none;
 	overflow: hidden;
+	@media (max-width: 700px) {
+		overflow-y: scroll;
+		margin-top: 85px;
+		// .homehead {visibility: hidden;}
+		.scrolly {
+		}
+	}
 }
 
 div.landing {
@@ -66,7 +75,7 @@ header {
 				box-sizing: border-box;
 				max-width: 100%;
 				padding: 7px;
-				&:hover{
+				&:hover {
 					font-weight: bold;
 				}
 			}
@@ -74,7 +83,7 @@ header {
 		.right {
 			text-align: right;
 		}
-		.logo{
+		.logo {
 			h1 {
 				font-size: 3.6rem;
 				margin: 0;
@@ -83,22 +92,22 @@ header {
 			p {
 				font-size: 1.4rem;
 				line-height: 1rem;
-				margin: 3px 0;			
+				margin: 3px 0;
 			}
 		}
 	}
 	@include headfoot();
-	margin-bottom:30px;
+	margin-bottom: 30px;
 }
-
 
 section {
 	@include blorder();
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;
-	
-	&.item, &.item-rev  {
+
+	&.item,
+	&.item-rev {
 		display: flex;
 		justify-content: space-between;
 		margin: 30px 0;
@@ -107,31 +116,31 @@ section {
 			line-height: 2.3rem;
 		}
 	}
-	
+
 	&.item-rev {
 		background-color: $project-offset-color;
 		flex-direction: row-reverse;
 		border-radius: 4px;
 	}
-	
+
 	&.intro {
 		article {
 			margin: 0 20px;
 			width: $col6;
 		}
-
 	}
-	
+
 	&.skills {
 		margin: -0px 0 10px;
 		flex-direction: column;
-		
+
 		width: 100%;
-	}	
+	}
 
 	&.history {
 		flex-direction: row;
-		p, li {
+		p,
+		li {
 			font-size: 1.5rem;
 			line-height: 2.3rem;
 		}
@@ -152,10 +161,10 @@ section {
 
 		.logo {
 			height: 50px;
-			width: 50px;
+			min-width: 100px;
 		}
 	}
-	
+
 	article.skillist {
 		display: flex;
 		flex-direction: row;
@@ -168,23 +177,29 @@ section {
 		}
 	}
 
-	.profile, .blurb {
+	.profile,
+	.blurb {
 		border-radius: 4px;
 		min-height: 100%;
 		@include sidebar();
 	}
 
 	.profile {
-		margin:20px;
+		margin: 20px;
 		width: $col4;
 		.fab {
-			margin: 0 25px 0 0;
+			margin: 0 auto;
 			text-decoration: none;
 			font-size: 3rem;
 			color: #444;
 		}
 		.links {
 			text-align: center;
+			p {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+			}
 		}
 		img {
 			display: block;
@@ -209,7 +224,7 @@ section {
 		// background-position: center 80%;
 		// transition: all 0.5s ease-in-out;
 	}
-	
+
 	.blurb {
 		margin: $col-margin;
 		// padding: $col-padding;
@@ -219,7 +234,7 @@ section {
 		img {
 			max-width: 100%;
 			height: auto;
-			padding-bottom: 20px
+			padding-bottom: 20px;
 		}
 		a {
 			display: block;
@@ -230,20 +245,21 @@ section {
 		// .live::before {
 		// 		content: $fa-var-github
 		// }
-
 	}
-
-
-
 }
 
 footer {
-	min-height:75px;
-	width: 100%
+	min-height: 75px;
+	width: 100%;
 }
 
-
-@media(max-width: 900px) {
+@media (min-width: 900px) and (max-width: 1000px) {
+	div.Home, div.homehead {
+		width: 900px;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 900px) {
 	div.main {
 		display: block;
 	}
@@ -255,7 +271,7 @@ footer {
 	}
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
 	div.main {
 		display: block;
 	}
@@ -263,15 +279,19 @@ footer {
 	nav {
 		flex-direction: column;
 		margin: 0;
-		.logo {text-align: center;}
-		.navlinks {margin: 10px 0 0 0;}
+		.logo {
+			text-align: center;
+		}
+		.navlinks {
+			margin: 10px 0 0 0;
+		}
 	}
 
 	section {
 		width: 500px;
 		box-sizing: border-box;
 		article {
-			padding:0;
+			padding: 0;
 			box-sizing: border-box;
 			width: 100%;
 			// * {margin:4px;}
@@ -301,7 +321,8 @@ footer {
 			box-sizing: border-box;
 			width: 100%;
 		}
-		&.item, &.item-rev  {
+		&.item,
+		&.item-rev {
 			display: flex;
 			// justify-content: space-between;
 			flex-direction: column;
@@ -314,13 +335,14 @@ footer {
 				line-height: 2.3rem;
 			}
 		}
-		.profile, .blurb {
+		.profile,
+		.blurb {
 			border-radius: 4px;
-			min-height: 100%;	
-			padding:10px;
+			min-height: 100%;
+			padding: 10px;
 			box-sizing: border-box;
-		}	
-		.profile{
+		}
+		.profile {
 			padding: 0;
 			box-sizing: border-box;
 
@@ -347,17 +369,17 @@ footer {
 			img {
 				max-width: 100%;
 				height: auto;
-				padding-bottom: 20px
+				padding-bottom: 20px;
 			}
 			a {
 				display: block;
 			}
 		}
-	
-		
 	}
 
-	article.logos { margin: 15px 0};
+	article.logos {
+		margin: 15px 0;
+	}
 
 	body {
 		font-size: 1.3rem;
@@ -366,5 +388,4 @@ footer {
 	p {
 		line-height: 2.4rem;
 	}
-
 }

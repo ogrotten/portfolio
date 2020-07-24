@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from "react-router-dom";
 import {
 	atom,
 	selector,
@@ -6,9 +7,9 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-export default function Head(props) {
+const Head = withRouter(props => {
 
-	const withHeader = (
+	const Header = (
 		<header>
 			<nav>
 				<div className="logo">
@@ -18,21 +19,38 @@ export default function Head(props) {
 				<div className="navlinks">
 					<a className="button" alt="Skills" href="#skills">Skills</a>
 					<a className="button" alt="Projects" href="#projects">Projects</a>
-					<a className="button" alt="History" href="#history">Highlights</a>
+					<a className="button" alt="Hilights" href="#hilights">Highlights</a>
 				</div>
 			</nav>
 		</header>
 	)
 
-	const noHeader = (<></>)
+	const homeHeader = (
+		<nav className="homehead">
+			<div className="homenav">
+				<div className="left logo">
+					<h1>Darrin Lowery</h1>
+					<p>Web Developer ● Design Analyst</p>
+				</div>
+				<div className="homelinks">
+					<Link to="skills" alt="Skills & Qualities"><h2>Skills</h2></Link>
+					<Link to="projects"><h2>Projects</h2></Link>
+					<Link to="hilights"><h2>Highlights</h2></Link>
+					<Link to="feed"><h2>Feed</h2></Link>
+				</div>
+			</div>
+		</nav>
+	)
 
 	return (
 		<>
 			{
 				props.location.pathname === "/"
-					? noHeader
-					: withHeader
+					? homeHeader
+					: Header
 			}
 		</>
 	)
-}
+})
+
+export default Head;
