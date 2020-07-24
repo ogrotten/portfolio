@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, withRouter, useHistory } from "react-router-dom";
 import {
 	atom,
@@ -20,24 +20,39 @@ import Experience from './components/Experience.js';
 import Feed from './components/Feed.js';
 
 function App(props) {
-	let history = useHistory();
-	let className, inject
-	if (history.location.pathname === "/") {
-		className = "scrolly"
-		inject = (
-			<>
-				{/* <div className="mainbg"></div> */}
-				<div className="cover"></div>
-			</>
-		)
-	} else {
-		className = "main"
-		inject = (<></>)
+	const history = useHistory();
+	const [current, setCurrent] = useState(history.location.pathname);
+	const [className, setClassName] = useState("scrolly")
+	const [inject, setInject] = useState(
+		<>
+			{/* <div className="mainbg"></div> */}
+			<div className="cover"></div>
+		</>
+	)
+
+	if (current !== history.location.pathname) {
+		setCurrent(history.location.pathname)
 	}
-	return ( 
+
+	useEffect(() => {
+		if (current === "/") {
+			setClassName("scrolly")
+			setInject(
+				<>
+					{/* <div className="mainbg"></div> */}
+					<div className="cover"></div>
+				</>
+			)
+		} else {
+			setClassName("main")
+			setInject(<></>)
+		}
+	}, [current])
+
+	return (
 		<>
 			<div className={className}>
-			{inject}
+				{inject}
 				<Head />
 
 				<Route exact path="/" component={Home} />

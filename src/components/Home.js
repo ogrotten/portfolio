@@ -23,8 +23,7 @@ export default function Home() {
 						<p>I am a graduate of the Full Stack Web track of Lambda School. Completed the 4 Units of primary and Computer Science instruction with high marks, completed Lambda Labs project with high marks.</p>
 						<p>Previously, I have owned team-developed websites for 10 years, and self-taught JavaScript and NodeJS. I was also an IT professional, primarily in support roles.</p>
 						<p>As a technologist, I have been drawn more to programming and development than support. I realized that I needed to grow and refine my dev skills and therefore attended Lambda School.</p>
-						<p>I am a family man with 5 kids, and enjoy the challenges and rewards that have come with that role.
-                </p>
+						<p>I am a family man with 5 kids, and enjoy the challenges and rewards that have come with that role.</p>
 					</article>
 					<div className="profile">
 						<img src="./img/HEADshot.jpg" alt="" srcSet="" />
