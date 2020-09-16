@@ -1148,7 +1148,7 @@
 				display: block;
 				height: 44px;
 				left: 0;
-				position: fixed;
+				// position: fixed;
 				top: 0;
 				width: 100%;
 				z-index: _misc(z-index-base) + 1;
@@ -1194,7 +1194,7 @@
 				height: 100%;
 				left: 0;
 				overflow-y: auto;
-				position: fixed;
+				// position: fixed;
 				top: 0;
 				width: _size(navPanel);
 				z-index: _misc(z-index-base) + 2;

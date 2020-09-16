@@ -1,0 +1,77 @@
+div.Projects {
+	z-index: 10;
+	@include blorder();
+	width: $basewidth;
+	margin: 0 auto;
+	// margin-top: 350px;
+	padding: 10px;
+	// box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+	// background-color: rgba(255, 255, 255, 0.5);
+	// border-radius: 40px;
+	box-sizing: border-box;
+
+	> * {
+		padding: 10px;
+	}
+	hr {
+		padding: 0;
+	}
+	h1 {
+		border-top: 1px solid $neutral-bg-color;
+		margin: 30px 0 0;
+	}
+	div.anchor {
+		display: none;
+	}
+
+	section {
+		&.item,
+		&.item-rev {
+			display: flex;
+			justify-content: space-between;
+			margin: 30px 0;
+			p {
+				font-size: 1.5rem;
+				line-height: 2.3rem;
+			}
+		}
+
+		&.item-rev {
+			background-color: $project-offset-color;
+			flex-direction: row-reverse;
+			border-radius: 4px;
+		}
+		article {
+			@include blorder();
+			width: calc(#{$col} * 5%);
+			margin: 0;
+			padding: $col-padding;
+		}
+		.blurb {
+			border-radius: 4px;
+			min-height: 100%;
+			@include sidebar();
+		}
+		.blurb {
+			margin: $col-margin;
+			// padding: $col-padding;
+			padding: 20px calc($col-margin * 1.5) 0;
+			width: calc(#{$col} * 3%);
+			// padding: 20px calc($col-margin * 1.5) 0;
+			img {
+				max-width: 100%;
+				height: auto;
+				padding-bottom: 20px;
+			}
+			a {
+				display: block;
+				&.live {
+					// &:extend(.fa, .fa-bullseye all);
+				}
+			}
+			// .live::before {
+			// 		content: $fa-var-github
+			// }
+		}
+	}
+}
