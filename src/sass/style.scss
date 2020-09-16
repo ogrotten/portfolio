@@ -209,27 +209,27 @@ section {
 		// transition: all 0.5s ease-in-out;
 	}
 
-	.blurb {
-		margin: $col-margin;
-		// padding: $col-padding;
-		padding: 20px calc($col-margin * 1.5) 0;
-		width: calc($col * 3%);
-		// padding: 20px calc($col-margin * 1.5) 0;
-		img {
-			max-width: 100%;
-			height: auto;
-			padding-bottom: 20px;
-		}
-		a {
-			display: block;
-			&.live {
-				// &:extend(.fa, .fa-bullseye all);
-			}
-		}
-		// .live::before {
-		// 		content: $fa-var-github
-		// }
-	}
+	// .blurb {
+	// 	margin: $col-margin;
+	// 	// padding: $col-padding;
+	// 	padding: 20px calc($col-margin * 1.5) 0;
+	// 	width: calc($col * 3%);
+	// 	// padding: 20px calc($col-margin * 1.5) 0;
+	// 	img {
+	// 		max-width: 100%;
+	// 		height: auto;
+	// 		padding-bottom: 20px;
+	// 	}
+	// 	a {
+	// 		display: block;
+	// 		&.live {
+	// 			// &:extend(.fa, .fa-bullseye all);
+	// 		}
+	// 	}
+	// 	// .live::before {
+	// 	// 		content: $fa-var-github
+	// 	// }
+	// }
 }
 
 footer {

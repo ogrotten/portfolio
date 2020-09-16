@@ -26,9 +26,9 @@ export default function Home() {
 						<p>I am a family man with 5 kids, and enjoy the challenges and rewards that have come with that role.</p>
 					</article>
 					<div className="profile">
-						<img src="./img/HEADshot.jpg" alt="" srcSet="" />
+						<img src="./img/Headshots1133.jpg" alt="" srcSet="" />
 						<div className="links">
-							<p><a>dlowery@monsto.com</a></p>
+							<p><a>dlowery@darrin.digital</a></p>
 							<p>
 								<a alt="LinkedIn" href="https://www.linkedin.com/in/https://www.linkedin.com/in/darrinlowerykc//" target="blank" alt="LinkedIn"><i className="fab fa-linkedin"></i></a>
 								<a alt="Github" href="https://github.com/ogrotten" target="blank" alt="github"><i className="fab fa-github"></i></a>
