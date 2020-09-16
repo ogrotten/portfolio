@@ -30,9 +30,15 @@ div.Projects {
 			display: flex;
 			justify-content: space-between;
 			margin: 30px 0;
+			@include sidebar();
 			p {
 				font-size: 1.5rem;
 				line-height: 2.3rem;
+			}
+			& > * {
+				margin: 20px;
+				padding: 0;
+				border: 0;
 			}
 		}
 
@@ -44,24 +50,18 @@ div.Projects {
 		article {
 			@include blorder();
 			width: calc(#{$col} * 5%);
-			margin: 0;
-			padding: $col-padding;
 		}
 		.blurb {
+			background-color: $sidebar-border-color;
 			border-radius: 4px;
 			min-height: 100%;
-			@include sidebar();
-		}
-		.blurb {
-			margin: $col-margin;
-			// padding: $col-padding;
-			padding: 20px calc($col-margin * 1.5) 0;
 			width: calc(#{$col} * 3%);
-			// padding: 20px calc($col-margin * 1.5) 0;
+			p {
+				margin: 20px;
+			}
 			img {
 				max-width: 100%;
 				height: auto;
-				padding-bottom: 20px;
 			}
 			a {
 				display: block;
@@ -69,9 +69,6 @@ div.Projects {
 					// &:extend(.fa, .fa-bullseye all);
 				}
 			}
-			// .live::before {
-			// 		content: $fa-var-github
-			// }
 		}
 	}
 }
