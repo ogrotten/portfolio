@@ -10,6 +10,10 @@ div.Projects {
 	// border-radius: 40px;
 	box-sizing: border-box;
 
+	@media (max-width: 1000px) {
+		width: 100vw;
+	}
+
 	> * {
 		padding: 10px;
 	}
@@ -25,6 +29,7 @@ div.Projects {
 	}
 
 	section {
+		overflow: auto;
 		&.item,
 		&.item-rev {
 			display: flex;
@@ -40,34 +45,69 @@ div.Projects {
 				padding: 0;
 				border: 0;
 			}
+			@media (max-width: 1000px) {
+				width: 85%;
+				flex-direction: column;
+				justify-content: space-evenly;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			article {
+				@include blorder();
+				width: calc(#{$col} * 5%);
+				@media (max-width: 1000px) {
+					width: 100%;
+					padding: 0;
+					margin: 0;
+				}
+			}
+			.blurb {
+				background-color: $sidebar-border-color;
+				border-radius: 4px;
+				min-height: 100%;
+				width: calc(#{$col} * 3%);
+				.projscreenshot {
+					display: block;
+				}
+				.projscreenlink {
+					display: none;
+				}
+
+				@media (max-width: 1000px) {
+					width: 100%;
+					padding: 0;
+					margin: 0;
+					.projscreenshot {
+						display: none;
+					}
+					.projscreenlink {
+						display: block;
+					}
+				}
+				p {
+					margin: 20px;
+				}
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+				a {
+					display: block;
+					&.live {
+						// &:extend(.fa, .fa-bullseye all);
+					}
+				}
+			}
 		}
 
 		&.item-rev {
 			background-color: $project-offset-color;
 			flex-direction: row-reverse;
 			border-radius: 4px;
-		}
-		article {
-			@include blorder();
-			width: calc(#{$col} * 5%);
-		}
-		.blurb {
-			background-color: $sidebar-border-color;
-			border-radius: 4px;
-			min-height: 100%;
-			width: calc(#{$col} * 3%);
-			p {
-				margin: 20px;
-			}
-			img {
-				max-width: 100%;
-				height: auto;
-			}
-			a {
-				display: block;
-				&.live {
-					// &:extend(.fa, .fa-bullseye all);
-				}
+			@media (max-width: 1000px) {
+				// width: 80%;
+				flex-direction: column;
+				justify-content: space-evenly;
 			}
 		}
 	}

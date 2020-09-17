@@ -19,8 +19,9 @@ export default function Projects() {
 					<p>React, Ant Design, ContextAPI, DexieJS/IndexedDB.</p>
 				</article>
 				<div className="blurb">
-					<img src="./img/YAT.png" alt="Conference Builder Screenshot" />
+					<img className="projscreenshot" src="./img/YAT.png" alt="Conference Builder Screenshot" />
 					<p>
+						<a className="projscreenlink" alt="Conference Builder Screenshot" href="./img/YAT.png"><i className="fab fa-github"></i>Conference Builder Screenshot Link</a>
 						{/* <a alt="AlpacaVids demo site" className="live" href="https://alpacavids.com" target="blank"><i className="fas fa-link"></i>alpacavids.com</a>
 						<a alt="Alpacavids Frontend Source" className="github" href="https://github.com/AlpacaVids/video-journal-for-teams-fe" target="blank"><i className="fab fa-github"></i>Frontend Source</a>
 						<a alt="Alpacavids Backend Source" className="github" href="https://github.com/AlpacaVids/video-journal-for-teams-be" target="blank"><i className="fab fa-github"></i>Backend Source</a> */}
@@ -36,8 +37,9 @@ export default function Projects() {
 					<p>React, NodeJS, PostgreSQL, Styled Components, Sendgrid.</p>
 				</article>
 				<div className="blurb">
-					<img src="./img/PQ.png" alt="Primitive Quiz Screenshot" />
+					<img className="projscreenshot" src="./img/PQ.png" alt="Primitive Quiz Screenshot" />
 					<p>
+						<a className="projscreenlink" alt="Primitive Quiz Screenshot" href="./img/YAT.png"><i className="fab fa-github"></i>Primitive Quiz Screenshot Link</a>
 						{/* <a alt="Celeb DOA Admin page" className="github" href="https://darrin-lowery-celebdoaadmin.netlify.app/admin" target="blank"><i className="fas fa-link"></i>Admin Page</a>
 						<a alt="Celeb DOA React Source" className="github" href="https://github.com/AlpacaVids/video-journal-for-teams-fe" target="blank"><i className="fab fa-github"></i>React Source</a>
 						<a alt="Celeb DOA Node Source" className="github" href="https://github.com/celebrity-dead-or-alive-1/BE" target="blank"><i className="fab fa-github"></i>Node Source</a>
@@ -91,7 +93,7 @@ export default function Projects() {
 				<div className="blurb">
 					<p>
 						{/* <!-- <a alt="megan application link" className="live" href="https://alpacavids.com" target="blank">megan (live)</a> --> */}
-                    <a alt="megan source" className="github" href="https://github.com/ogrotten/megan" target="blank"><i className="fab fa-github"></i>Source</a>
+						<a alt="megan source" className="github" href="https://github.com/ogrotten/megan" target="blank"><i className="fab fa-github"></i>Source</a>
 					</p>
 				</div>
 			</section>
