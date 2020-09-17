@@ -25,10 +25,14 @@ div.Home {
 		display: none;
 	}
 	.intro {
-		margin: 30px 0 0 0
+		margin: 30px 0 0 0;
+			@media (max-width: 900px) {
+margin: 0;
+padding: 0;
+}
 	}
 	section {
-		padding: 40px 0
+		padding: 40px 0;
 	}
 }
 
@@ -37,7 +41,7 @@ div.Home {
 	// position: fixed;
 	// top: 0;
 
-	height: 85px;
+	// min-height: 85px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -46,7 +50,10 @@ div.Home {
 	background-color: rgb(28, 42, 70);
 	color: $sidebar-bg-color;
 	letter-spacing: 1px;
+	padding: 15px;
 
+	@media (max-width: 700px) {
+	}
 	.homenav {
 		width: $basewidth;
 		display: flex;
@@ -65,13 +72,19 @@ div.Home {
 				box-sizing: border-box;
 				max-width: 100%;
 				padding: 7px;
-				h2 {margin: 0}
-				transition: all ease-in-out .15s;
+				h2 {
+					margin: 0;
+				}
+				transition: all ease-in-out 0.15s;
 				text-decoration: none;
 				border-bottom: 2px solid transparent;
 				&:hover {
-					border-color:  $sidebar-bg-color;
+					border-color: $sidebar-bg-color;
 				}
+			}
+			@media (max-width: 900px) {
+				// flex-direction: column;
+				justify-content: space-evenly;
 			}
 		}
 
@@ -85,6 +98,20 @@ div.Home {
 				font-size: 1.4rem;
 				line-height: 1rem;
 				margin: 3px 0;
+			}
+		}
+
+		@media (max-width: 900px) {
+			flex-direction: column;
+			justify-content: space-evenly;
+			& > * {
+				margin: 10px 0 10px;
+			}
+			.logo {
+				text-align: center;
+			}
+			.navlinks {
+				margin: 10px 0 0 0;
 			}
 		}
 	}
@@ -137,16 +164,6 @@ div.mainbg {
 }
 
 @media (max-width: 700px) {
-	nav {
-		flex-direction: column;
-		margin: 0;
-		.logo {
-			text-align: center;
-		}
-		.navlinks {
-			margin: 10px 0 0 0;
-		}
-	}
 	.container,
 	.Home {
 		max-width: 500px;

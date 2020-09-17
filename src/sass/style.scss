@@ -38,12 +38,8 @@ div.scrolly {
 
 	background-image: none;
 	overflow: hidden;
-	@media (max-width: 700px) {
-		overflow-y: scroll;
-		margin-top: 85px;
-		// .homehead {visibility: hidden;}
-		.scrolly {
-		}
+	@media (max-width: 900px) {
+		overflow: auto;
 	}
 }
 
@@ -261,16 +257,16 @@ footer {
 		display: block;
 	}
 
-	nav {
-		flex-direction: column;
-		margin: 0;
-		.logo {
-			text-align: center;
-		}
-		.navlinks {
-			margin: 10px 0 0 0;
-		}
-	}
+	// nav {
+	// 	// flex-direction: column;
+	// 	// margin: 0;
+	// 	.logo {
+	// 		text-align: center;
+	// 	}
+	// 	.navlinks {
+	// 		margin: 10px 0 0 0;
+	// 	}
+	// }
 
 	section {
 		width: 500px;
