@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 
 // import {
 // 	atom,
@@ -9,8 +8,6 @@ import { useHistory } from "react-router-dom";
 // } from 'recoil';
 
 export default function Skills() {
-	let history = useHistory();
-	console.log(10, history.location.pathname);
 	return (
 		<div style={{ width: "50%", minWidth: "400px" }}>
 			<section className="item-rev">

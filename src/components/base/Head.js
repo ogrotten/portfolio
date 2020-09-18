@@ -42,14 +42,14 @@ const Head = withRouter(props => {
 	// 	</nav>
 	// )
 
+	// <>
+	// 	{
+	// 		props.location.pathname === "/"
+	// 			? homeHeader
+	// 			: Header
+	// 	}
+	// </>
 	return (
-		// <>
-		// 	{
-		// 		props.location.pathname === "/"
-		// 			? homeHeader
-		// 			: Header
-		// 	}
-		// </>
 		<nav className="homehead">
 			<div className="homenav">
 				<div className="left logo">
