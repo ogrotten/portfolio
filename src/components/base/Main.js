@@ -1,19 +1,19 @@
 import React from 'react';
-import { Route, withRouter } from "react-router-dom";
-import {
-	atom,
-	selector,
-	useRecoilState,
-	useRecoilValue,
-} from 'recoil';
+import { Route } from "react-router-dom";
+// import {
+// 	atom,
+// 	selector,
+// 	useRecoilState,
+// 	useRecoilValue,
+// } from 'recoil';
 
 import Home from '../Home.js';
 import Projects from '../Projects.js';
 import Contact from '../Contact.js';
-import Skills from '../Skills.js';
-import Feed from '../Feed.js';
+// import Skills from '../Skills.js';
+// import Feed from '../Feed.js';
 
-import FourOhFour from '../base/FourOhFour.js';
+// import FourOhFour from '../base/FourOhFour.js';
 
 export default function Main() {
 	return (

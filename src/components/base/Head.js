@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, withRouter } from "react-router-dom";
-import {
-	atom,
-	selector,
-	useRecoilState,
-	useRecoilValue,
-} from 'recoil';
+// import {
+// 	atom,
+// 	selector,
+// 	useRecoilState,
+// 	useRecoilValue,
+// } from 'recoil';
 
 const Head = withRouter(props => {
 
