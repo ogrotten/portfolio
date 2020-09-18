@@ -1,12 +1,12 @@
 import React from 'react';
-import { Route, withRouter, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-import {
-	atom,
-	selector,
-	useRecoilState,
-	useRecoilValue,
-} from 'recoil';
+// import {
+// 	atom,
+// 	selector,
+// 	useRecoilState,
+// 	useRecoilValue,
+// } from 'recoil';
 
 export default function Skills() {
 	let history = useHistory();

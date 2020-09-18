@@ -1,10 +1,10 @@
 import React from 'react';
-import {
-	atom,
-	selector,
-	useRecoilState,
-	useRecoilValue,
-} from 'recoil';
+// import {
+// 	atom,
+// 	selector,
+// 	useRecoilState,
+// 	useRecoilValue,
+// } from 'recoil';
 
 import Logos from './Logos.js'
 
@@ -28,7 +28,7 @@ export default function Home() {
 					<div className="profile">
 						<img src="./img/Headshots1133.jpg" alt="" srcSet="" />
 						<div className="links">
-							<p><a>dlowery@darrin.digital</a></p>
+							<p><a href="mailto:dlowery@darrin.digital">dlowery@darrin.digital</a></p>
 							<p>
 								<a alt="LinkedIn" href="https://www.linkedin.com/in/darrinlowerykc/" target="blank" alt="LinkedIn"><i className="fab fa-linkedin"></i></a>
 								<a alt="Github" href="https://github.com/ogrotten" target="blank" alt="github"><i className="fab fa-github"></i></a>

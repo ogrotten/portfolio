@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Route, useLocation, useHistory } from "react-router-dom";
-import {
-	atom,
-	selector,
-	useRecoilState,
-	useRecoilValue,
-} from 'recoil';
+import {  useLocation } from "react-router-dom";
+// import {
+// 	atom,
+// 	selector,
+// 	useRecoilState,
+// 	useRecoilValue,
+// } from 'recoil';
 
 import './sass/style.scss';
 
@@ -13,11 +13,11 @@ import Main from './components/base/Main.js';
 import Head from './components/base/Head.js';
 import Foot from './components/base/Foot.js';
 
-import Home from './components/Home.js';
-import Skills from './components/Skills.js';
-import Projects from './components/Projects.js';
-// import Hilights from './components/Hilights.js';
-import Feed from './components/Feed.js';
+// import Home from './components/Home.js';
+// import Skills from './components/Skills.js';
+// import Projects from './components/Projects.js';
+// // import Hilights from './components/Hilights.js';
+// import Feed from './components/Feed.js';
 
 function App(props) {
 	const location = useLocation();
