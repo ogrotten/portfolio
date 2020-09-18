@@ -19,7 +19,7 @@ export default function Projects() {
 					<p>React, Ant Design, ContextAPI, DexieJS/IndexedDB.</p>
 				</article>
 				<div className="blurb">
-					<img className="projscreenshot" src="./img/YAT.png" alt="Conference Builder Screenshot" />
+					<a className="projscreenshot" alt="Conference Builder Screenshot" href="./img/YAT.png"><img className="projscreenshot" src="./img/YAT.png" alt="Conference Builder Screenshot" /></a>
 					<p>
 						<a className="projscreenlink" alt="Conference Builder Screenshot" href="./img/YAT.png"><i className="fas fa-link"></i>Conference Builder Screenshot Link</a>
 					</p>
@@ -34,9 +34,10 @@ export default function Projects() {
 					<p>React, NodeJS, PostgreSQL, Styled Components, Sendgrid.</p>
 				</article>
 				<div className="blurb">
-					<img className="projscreenshot" src="./img/PQ.png" alt="Primitive Quiz Screenshot" />
+					<a className="projscreenshot" alt="Primitive Quiz Screenshot" href="./img/PQ.png"><img src="./img/PQ.png" alt="Primitive Quiz Screenshot" /></a>
 					<p>
 						<a className="projscreenlink" alt="Primitive Quiz Screenshot" href="./img/PQ.png"><i className="fas fa-link"></i>Primitive Quiz Screenshot Link</a>
+						<a alt="The Roaming Survey demo site" className="live" href="https://immense-eyrie-45216.herokuapp.com/#/" target="blank"><i className="fas fa-link"></i>Demo site</a>
 					</p>
 				</div>
 			</section>
@@ -49,7 +50,7 @@ export default function Projects() {
 					<p>React, NodeJS, PostgreSQL, Ant Design, KnexJS, Jest.</p>
 				</article>
 				<div className="blurb">
-					<img className="projscreenshot" src="./img/AlpVids.png" alt="AlpacaVids Screenshot" />
+					<a className="projscreenshot" alt="AlpacaVids Screenshot" href="./img/AlpVids.png"><img className="projscreenshot" src="./img/AlpVids.png" alt="AlpacaVids Screenshot" /></a>
 					<p>
 						<a className="projscreenlink" alt="AlpacaVids Screenshot" href="./img/AlpVids.png"><i className="fas fa-link"></i>AlpacaVids Screenshot Link</a>
 						<a alt="AlpacaVids demo site" className="live" href="https://alpacavids.netlify.app" target="blank"><i className="fas fa-link"></i>Demo on Netlify</a>
