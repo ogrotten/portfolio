@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Gentium+Basic|Work+Sans:900&display=swap");
+
+@font-face {
+	font-family: "SansFont";
+	src: url("./fonts/HelveticaNeueLTStd-Roman.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "SansFontI";
+	src: url("./fonts/HelveticaNeueLTStd-It.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "SansFontB";
+	src: url("./fonts/HelveticaNeueLTStd-Blk.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "SansFontBI";
+	src: url("./fonts/HelveticaNeueLTStd-BlkIt.otf") format("truetype");
+}
+
+$sidebar-bg-color: #e3f4f4;
+$sidebar-border-color: darken($sidebar-bg-color, 7%);
+$neutral-bg-color: rgb(238, 238, 238);
+$neutral-border-color: darken($neutral-bg-color, 7%);
+$project-offset-color: lighten($neutral-bg-color, 3.5%);
+
+$page-bg: rgba(252, 243, 206, 0.384);
+
+$col: 100;
+$col-margin: 20px;
+$col-padding: 10px;
+
+html {
+	font-size: 62.5%;
+} /* =10px */
+
+body {
+	font-family: "SansFont";
+	font-size: 1.6rem; 
+	color: #333;
+	background-color: $page-bg;
+	margin: 0;
+	.invert a {
+		color: #ccc;
+	}
+}
+
+hr {
+	border: 1px solid $neutral-bg-color;
+	margin: 25px;
+	padding: 0;
+}
+
+h1 {
+	font-family: "SansFontB";
+	// margin: 0px 0px 1.2rem 0px;
+	margin: 0px 0px 1.2rem 0px;
+}
+h2 {
+	font-family: "SansFont";
+	margin: 0px 0px 1.2rem 0px;
+}
+h3,
+h4 {
+	font-family: "SansFontBI";
+	color: #444;
+	margin: 15px 0 4px;
+}
+
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.8rem;
+	font-style: oblique;
+}
+
+p {
+	line-height: 3rem;
+	margin: 0 0 2rem 0;
+	&.subtitle {
+		font-family: "SansFontI";
+		font-size: 1.25rem;
+		margin-top: -10px;
+	}
+}
+
+// a {
+// 	text-decoration: none;
+// 	color: #444;
+// 	&:hover {
+// 		// text-decoration: underline;
+// 		font-weight: bold;
+// 	}
+// }
+
+@mixin sidebar {
+	border-top: 6px solid $sidebar-border-color;
+	border-bottom: 2px solid $sidebar-border-color;
+	background-color: $sidebar-bg-color;
+}
+
+@mixin headfoot {
+	border-top: 6px solid $neutral-border-color;
+	border-bottom: 2px solid $neutral-border-color;
+	// background-color: $neutral-bg-color;
+}
+
+@mixin divider-blank {
+	// height: 30px;
+}
+
+@mixin spacer {
+	width: calc($col * 1%);
+}
+
+// BASE width
+$basewidth: 1000px;
+
+// Column widths
+$col1: 100px;
+$col2: 200px;
+$col3: 300px;
+$col4: 400px;
+$col5: 500px;
+$col6: 600px;
+$col7: 700px;
+$col8: 800px;
+$col9: 900px;
+$col10: 1000px;

@@ -1,0 +1,114 @@
+div.Projects {
+	z-index: 10;
+	@include blorder();
+	width: $basewidth;
+	margin: 0 auto;
+	// margin-top: 350px;
+	padding: 10px;
+	// box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+	// background-color: rgba(255, 255, 255, 0.5);
+	// border-radius: 40px;
+	box-sizing: border-box;
+
+	@media (max-width: 1000px) {
+		width: 100vw;
+	}
+
+	> * {
+		padding: 10px;
+	}
+	hr {
+		padding: 0;
+	}
+	h1 {
+		border-top: 1px solid $neutral-bg-color;
+		margin: 30px 0 0;
+	}
+	div.anchor {
+		display: none;
+	}
+
+	section {
+		overflow: auto;
+		&.item,
+		&.item-rev {
+			display: flex;
+			justify-content: space-between;
+			margin: 30px 0;
+			@include sidebar();
+			p {
+				font-size: 1.5rem;
+				line-height: 2.3rem;
+			}
+			& > * {
+				margin: 20px;
+				padding: 0;
+				border: 0;
+			}
+			@media (max-width: 1000px) {
+				width: 85%;
+				flex-direction: column;
+				justify-content: space-evenly;
+				margin: 10px auto;
+				padding: 20px;
+			}
+			article {
+				@include blorder();
+				width: calc(#{$col} * 5%);
+				@media (max-width: 1000px) {
+					width: 100%;
+					padding: 0;
+					margin: 0;
+				}
+			}
+			.blurb {
+				background-color: $sidebar-border-color;
+				border-radius: 4px;
+				min-height: 100%;
+				width: calc(#{$col} * 3%);
+				.projscreenshot {
+					display: block;
+				}
+				.projscreenlink {
+					display: none;
+				}
+
+				@media (max-width: 1000px) {
+					width: 100%;
+					padding: 0;
+					margin: 0;
+					.projscreenshot {
+						display: none;
+					}
+					.projscreenlink {
+						display: block;
+					}
+				}
+				p {
+					margin: 20px;
+				}
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+				a {
+					display: block;
+					&.live {
+						// &:extend(.fa, .fa-bullseye all);
+					}
+				}
+			}
+		}
+
+		&.item-rev {
+			background-color: $project-offset-color;
+			flex-direction: row-reverse;
+			border-radius: 4px;
+			@media (max-width: 1000px) {
+				// width: 80%;
+				flex-direction: column;
+				justify-content: space-evenly;
+			}
+		}
+	}
+}
