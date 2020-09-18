@@ -11,12 +11,6 @@ import Logos from './Logos.js'
 export default function Home() {
 	return (
 		<>
-			{/* <nav className="homehead">
-				<div className="homenav">
-					<p className="left">LEFT</p>
-					<p className="right">RIGHT</p>
-				</div>
-			</nav> */}
 			<div className="Home">
 				<section className="intro">
 					<article>
