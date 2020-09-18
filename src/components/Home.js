@@ -30,9 +30,9 @@ export default function Home() {
 						<div className="links">
 							<p><a href="mailto:dlowery@darrin.digital">dlowery@darrin.digital</a></p>
 							<p>
-								<a alt="LinkedIn" href="https://www.linkedin.com/in/darrinlowerykc/" target="blank" alt="LinkedIn"><i className="fab fa-linkedin"></i></a>
-								<a alt="Github" href="https://github.com/ogrotten" target="blank" alt="github"><i className="fab fa-github"></i></a>
-								<a alt="Dev.to" href="https://dev.to/ogrotten" target="blank" alt="dev.to"><i className="fab fa-dev"></i></a>
+								<a alt="LinkedIn" href="https://www.linkedin.com/in/darrinlowerykc/" target="blank" ><i className="fab fa-linkedin"></i></a>
+								<a alt="Github" href="https://github.com/ogrotten" target="blank" ><i className="fab fa-github"></i></a>
+								<a alt="Dev.to" href="https://dev.to/ogrotten" target="blank" ><i className="fab fa-dev"></i></a>
 							</p>
 						</div>
 					</div>
