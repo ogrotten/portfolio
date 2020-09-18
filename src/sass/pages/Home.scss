@@ -123,16 +123,17 @@ div.cover {
 	z-index: 0;
 	position: absolute;
 	margin-top: -25px;
-	// height: 900px;
 	height: 120%;
 	width: 6000px;
 	background-image: url("../../imgs/floatbg.jpg");
-	// background-position: center center;
 	background-size: auto 100%;
 	animation: move 250s infinite linear;
 	will-change: transform;
 	opacity: 0.1;
 	overflow: hidden;
+	@media (max-width: 900px) {
+		overflow: hidden;
+	}
 }
 
 div.mainbg {
