@@ -8,9 +8,8 @@ import {
 	useRecoilValue,
 } from 'recoil';
 
-export default function Experience() {
+export default function Skills() {
 	let history = useHistory();
 	console.log(10, history.location.pathname);
 	return "Experience"
 }
-

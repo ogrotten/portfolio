@@ -14,9 +14,9 @@ import Head from './components/base/Head.js';
 import Foot from './components/base/Foot.js';
 
 import Home from './components/Home.js';
-// import Skills from './components/Skills.js';
+import Skills from './components/Skills.js';
 import Projects from './components/Projects.js';
-import Hilights from './components/Hilights.js';
+// import Hilights from './components/Hilights.js';
 import Feed from './components/Feed.js';
 
 function App(props) {
@@ -44,12 +44,13 @@ function App(props) {
 			<div className={className}>
 				{inject}
 				<Head />
-
-				<Route exact path="/" component={Home} />
+				<Main />
+				
+				{/*<Route exact path="/" component={Home} />
 				<Route exact path="/feed" component={Feed} />
 				<Route exact path="/projects" component={Projects} />
-				<Route exact path="/hilights" component={Hilights} />
-				{/* <Route exact path="/skills" component={Skills} /> */}
+				<Route exact path="/skills" component={Skills} /> */}
+				{/* <Route exact path="/hilights" component={Hilights} /> */}
 
 				<Foot />
 			</div>
