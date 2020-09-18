@@ -9,7 +9,7 @@ import React from 'react';
 
 export default function Skills() {
 	return (
-		<div style={{ width: "50%", minWidth: "400px" }}>
+		<div className="Projects" style={{ width: "50%", minWidth: "400px" }}>
 			<section className="item-rev">
 				<article>
 					<p>email:&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:dlowery@darrin.digital">dlowery@darrin.digital</a></p>
