@@ -22,6 +22,7 @@ export default function Projects() {
 					<a className="projscreenshot" alt="Conference Builder Screenshot" href="./img/YAT.png"><img className="projscreenshot" src="./img/YAT.png" alt="Conference Builder Screenshot" /></a>
 					<p>
 						<a className="projscreenlink" alt="Conference Builder Screenshot" href="./img/YAT.png"><i className="fas fa-link"></i>Conference Builder Screenshot Link</a>
+						<a alt="Conference Builder demo site" className="live" href="https://conference-builder.netlify.app/manager" target="blank"><i className="fas fa-link"></i>Conference Builder Demo</a>
 					</p>
 				</div>
 			</section>
@@ -37,7 +38,7 @@ export default function Projects() {
 					<a className="projscreenshot" alt="Primitive Quiz Screenshot" href="./img/PQ.png"><img src="./img/PQ.png" alt="Primitive Quiz Screenshot" /></a>
 					<p>
 						<a className="projscreenlink" alt="Primitive Quiz Screenshot" href="./img/PQ.png"><i className="fas fa-link"></i>Primitive Quiz Screenshot Link</a>
-						<a alt="The Roaming Survey demo site" className="live" href="https://immense-eyrie-45216.herokuapp.com/#/" target="blank"><i className="fas fa-link"></i>Demo site</a>
+						<a alt="The Roaming Survey demo site" className="live" href="https://immense-eyrie-45216.herokuapp.com/#/" target="blank"><i className="fas fa-link"></i>Primitive Quiz Demo</a>
 					</p>
 				</div>
 			</section>
